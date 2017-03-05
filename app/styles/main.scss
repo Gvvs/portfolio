@@ -68,7 +68,7 @@ body {
     $delay: 50ms;
     $duration: 4s;
 
-    hgroup {
+    div.heading-container {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -198,25 +198,25 @@ body {
       }
 
       50% {
-        transform: translateY(-30%) rotateZ(-5deg);
-        right: -75px;
+        transform: translateY(-35%) rotateZ(-5deg);
+        right: -40px;
         opacity: 0.2;
       }
 
       100% {
-        transform: translateY(-30%) rotateZ(0deg);
-        right: -75px;
+        transform: translateY(-35%) rotateZ(0deg);
+        right: -40px;
         opacity: 0.3;
       }
     }
-
     @keyframes animesvg {
-        0% {
-            transform: translateY(-30%) rotateZ(0deg);
-        }
-        100% {
-            transform: translateY(-29%) rotateZ(-2deg);
-        }
+      0% {
+        transform: translateY(-35%) rotateZ(0deg);
+      }
+
+      100% {
+        transform: translateY(-34%) rotateZ(-2deg);
+      }
     }
   }
 
@@ -245,51 +245,61 @@ body {
           }
         }
 
-        section {
-          line-height: 1.5em;
+        div.border {
+          padding-right: 20px;
+          border-right: 10px rgba(255, 255, 255, 0.1) dotted;
+          border-bottom-right-radius: 30px;
+          width: 50%;
 
-          h3 {
-            color: rgb(40,146,210);
-            text-align: right;
-            margin: 25px 0 10px;
+          section {
+
+            h3 {
+              color: rgb(40,146,210);
+              text-align: right;
+              margin: 25px 0 5px;
+              font-style: italic;
+              font-weight: 800;
+              font-size: 24px;
+            }
+
+            h3:before {
+              content: '##';
+              margin-right: 5px;
+            }
+
+            p {
+              text-align: right;
+              margin: 5px 0;
+              line-height: 1.3em;
+            }
+
+            a {
+              color: white;
+              font-style: italic;
+              text-decoration: none;
+              border-bottom: 1px white dotted;
+              transition: all 1s ease-out;
+            }
+
+            a:hover {
+              color: rgb(40,146,210);
+              border-bottom: 1px rgb(40,146,210) dotted;
+            }
+          }
+
+          footer {
+            margin-top: 30px;
+            font-weight: 200;
             font-style: italic;
-          }
-
-          h3:before {
-            content: '_';
-          }
-
-          p {
+            font-size: 12px;
             text-align: right;
-            margin: 10px 0;
-            line-height: 1.3em;
-          }
+            padding-bottom: 20px;
 
-          a {
-            color: white;
-            font-style: italic;
-            text-decoration: none;
-            border-bottom: 1px white dotted;
-            transition: all 1s ease-out;
-          }
-
-          a:hover {
-            color: rgb(40,146,210);
-            border-bottom: 1px rgb(40,146,210) dotted;
-          }
-        }
-
-        footer {
-          margin-top: 30px;
-          font-weight: 200;
-          font-style: italic;
-          font-size: 12px;
-          text-align: right;
-
-          p {
-            display: inline;
-            padding-bottom: 5px;
-            border-bottom: 1px rgba(40,146,210,0.8) dotted;
+            p {
+              display: inline;
+              padding-bottom: 5px;
+              border-bottom: 1px rgba(40,146,210,0.8) dotted;
+            }
           }
         }
       }
