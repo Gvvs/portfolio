@@ -8,7 +8,7 @@ body {
   font-family: 'Muli', sans-serif;
   font-weight: 200;
   font-style: normal;
-  font-size: 15px;
+  font-size: 16px;
   @keyframes body {
     to {
       background-color: rgba(115,40,210,0.8);
@@ -230,8 +230,9 @@ body {
 
       div.wrapper {
         position: absolute;
-        top: 100px;
-        left: 100px;
+        top: 50%;
+        left: 150px;
+        transform: translateY(-50%);
 
         header {
           font-weight: 800;
@@ -246,16 +247,15 @@ body {
         }
 
         div.border {
-          padding-right: 20px;
-          border-right: 10px rgba(255, 255, 255, 0.1) dotted;
-          border-bottom-right-radius: 30px;
+          padding-left: 20px;
+          border-left: 10px rgba(255, 255, 255, 0.1) dotted;
+          border-bottom-left-radius: 30px;
           width: 50%;
+          text-align: left;
 
           section {
-
             h3 {
               color: rgb(40,146,210);
-              text-align: right;
               margin: 25px 0 5px;
               font-style: italic;
               font-weight: 800;
@@ -268,9 +268,9 @@ body {
             }
 
             p {
-              text-align: right;
-              margin: 5px 0;
+              margin: 8px 0;
               line-height: 1.3em;
+              text-indent: 20px;
             }
 
             a {
@@ -292,7 +292,6 @@ body {
             font-weight: 200;
             font-style: italic;
             font-size: 12px;
-            text-align: right;
             padding-bottom: 20px;
 
             p {
