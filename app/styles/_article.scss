@@ -1,0 +1,119 @@
+// Mixins
+@mixin articlecolor($backgroundcolor, $textcolor, $ahovercolor) {
+  background-color: $backgroundcolor;
+
+  div.wrapper {
+    header {
+      h2:before {
+        color: $textcolor;
+      }
+    }
+
+    div.border {
+      section {
+        h3 {
+          color: $textcolor;
+        }
+
+        a:hover {
+          color: $ahovercolor;
+          border-bottom: 1px $ahovercolor dotted;
+        }
+      }
+
+      footer {
+        p {
+          border-bottom: 1px $textcolor dotted;
+        }
+      }
+    }
+  }
+}
+// Scss
+article {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+
+  div.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    transform: translateY(-50%);
+    z-index: 6;
+
+    header {
+      font-weight: 800;
+      font-style: italic;
+      font-size: 30px;
+
+      h2 {
+        margin: 0 0 15px;
+      }
+
+      h2:before {
+        content: '#';
+        margin-right: 10px;
+      }
+    }
+
+    div.border {
+      padding-left: 20px;
+      border-left: 10px rgba(255, 255, 255, 0.1) dotted;
+      border-bottom-left-radius: 30px;
+      width: 60%;
+      text-align: left;
+
+      section {
+        h3 {
+          margin: 25px 0 5px;
+          font-style: italic;
+          font-weight: 800;
+          font-size: 24px;
+        }
+
+        h3:before {
+          content: '##';
+          margin-right: 5px;
+        }
+
+        p {
+          margin: 8px 0;
+          line-height: 1.3em;
+          text-indent: 20px;
+        }
+
+        a {
+          color: white;
+          font-style: italic;
+          text-decoration: none;
+          border-bottom: 1px white dotted;
+          transition: all 1s ease-out;
+        }
+      }
+
+      footer {
+        margin-top: 30px;
+        font-weight: 200;
+        font-style: italic;
+        font-size: 12px;
+        padding-bottom: 20px;
+
+        p {
+          display: inline;
+          margin-right: 20px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(1) {
+    @include articlecolor(rgba(115,40,210,0.6), rgba(40,146,210,0.8), rgba(40,146,210,0.7));
+  }
+
+  &:nth-of-type(2) {
+    @include articlecolor(rgba(40,94,210,0.6), rgba(211,158,229,0.8), rgba(211,158,229,0.7));
+  }
+}

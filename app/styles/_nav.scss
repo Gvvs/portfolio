@@ -1,0 +1,46 @@
+// Variables
+$navHeight: 50px;
+// Scss
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $navHeight;
+  width: 100vw;
+  z-index: 100;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: stretch;
+    align-content: center;
+
+    li {
+      display: inline;
+      list-style: none;
+      margin-right: 20px;
+
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 5px 10px;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 200;
+        font-style: italic;
+        font-size: 17px;
+        line-height: 100%;
+        transition: all 0.3s ease-out;
+        border-bottom: 1px rgba(255, 255, 255, 0.3) dotted;
+        border-bottom-right-radius: 10px;
+      }
+
+      a:hover {
+        color: rgba(255, 255, 255, 1);
+        transform: translateY(3px);
+      }
+    }
+  }
+}

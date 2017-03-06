@@ -1,0 +1,39 @@
+figure {
+  svg {
+    width: 40%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    right: -300px;
+    z-index: 5;
+    opacity: 0;
+    animation: startsvg 6s forwards ease-out, animesvg 4s 7s linear infinite alternate;
+  }
+  @keyframes startsvg {
+    0% {
+      opacity: 0;
+      transform: rotateZ(9deg);
+    }
+
+    50% {
+      transform: translateY(-35%) rotateZ(-5deg);
+      right: -40px;
+      opacity: 0.2;
+    }
+
+    100% {
+      transform: translateY(-35%) rotateZ(0deg);
+      right: -40px;
+      opacity: 0.3;
+    }
+  }
+  @keyframes animesvg {
+    0% {
+      transform: translateY(-35%) rotateZ(0deg);
+    }
+
+    100% {
+      transform: translateY(-34%) rotateZ(-2deg);
+    }
+  }
+}
