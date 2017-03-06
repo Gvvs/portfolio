@@ -187,7 +187,7 @@ body {
       position: fixed;
       top: 50%;
       right: -300px;
-      z-index: 99;
+      z-index: 5;
       opacity: 0;
       animation: startsvg 6s forwards ease-out, animesvg 4s 7s linear infinite alternate;
     }
@@ -233,6 +233,7 @@ body {
         top: 50%;
         left: 150px;
         transform: translateY(-50%);
+        z-index: 6;
 
         header {
           font-weight: 800;
@@ -250,7 +251,7 @@ body {
           padding-left: 20px;
           border-left: 10px rgba(255, 255, 255, 0.1) dotted;
           border-bottom-left-radius: 30px;
-          width: 50%;
+          width: 60%;
           text-align: left;
 
           section {
