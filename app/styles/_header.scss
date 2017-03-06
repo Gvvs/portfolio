@@ -67,6 +67,7 @@ header#whois {
       font-size: 30px;
       transition: transform $duration cubic-bezier(.43,.1,.57,.9), filter $duration ease, opacity $duration ease;
       opacity: 0;
+      font-smoothing: antialiased;
       filter: blur(5px);
 
       &:nth-of-type(2) {

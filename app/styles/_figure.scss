@@ -12,7 +12,7 @@ figure {
   @keyframes startsvg {
     0% {
       opacity: 0;
-      transform: rotateZ(9deg);
+      transform: translateY(0) rotateZ(9deg);
     }
 
     50% {

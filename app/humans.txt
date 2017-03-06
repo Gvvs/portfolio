@@ -1,14 +1,11 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* TEAM */
+Name:Allan Dollé
+Job: Developer front-end
+From:Paris, France, HETIC
 
-# TEAM
-
-  <name> -- <role> -- <twitter>
-
-# THANKS
-
-  <name>
-
-# TECHNOLOGY COLOPHON
-
-  HTML5, CSS3
+/* SITE */
+Last update:2017/03/10
+Language: English
+Doctype:HTML5
+IDE: Atom
+Technologie: HTML5, CSS3, JavaScript
