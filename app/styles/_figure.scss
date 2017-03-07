@@ -7,7 +7,7 @@ figure {
     right: -300px;
     z-index: 5;
     opacity: 0;
-    animation: startsvg 6s forwards ease-out, animesvg 4s 7s linear infinite alternate;
+    animation: startsvg 6s forwards ease-out, animesvg 3.2s 7s ease-out infinite alternate;
   }
   @keyframes startsvg {
     0% {
@@ -33,7 +33,7 @@ figure {
     }
 
     100% {
-      transform: translateY(-34%) rotateZ(-2deg);
+      transform: translateY(-33.5%) rotateZ(-2deg);
     }
   }
 }

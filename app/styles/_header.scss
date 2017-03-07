@@ -2,11 +2,11 @@
 $fadeUp: 100px;
 $fallDown: -150px;
 $delay: 500ms;
-$duration: 4s;
-// Scss
+$duration: 4s; // Scss
+
 header#whois {
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
 
   div.heading-container {
     position: absolute;
@@ -26,7 +26,7 @@ header#whois {
     h1 {
       transform: translateY($fadeUp);
       opacity: 0;
-      transition: transform $duration/1.5 ease-out, opacity $duration ease;
+      transition: transform $duration/1.5 ease-out, opacity $duration ease-out;
       letter-spacing: 3px;
       font-style: normal;
       font-weight: 800;

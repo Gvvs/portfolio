@@ -1,6 +1,6 @@
 // Variables
-$navHeight: 50px;
-// Scss
+$navHeight: 50px; // Scss
+
 nav {
   display: block;
   position: fixed;
@@ -31,7 +31,6 @@ nav {
         font-weight: 200;
         font-style: italic;
         font-size: 17px;
-        line-height: 100%;
         transition: all 0.3s ease-out;
         border-bottom: 1px rgba(255, 255, 255, 0.3) dotted;
         border-bottom-right-radius: 10px;
