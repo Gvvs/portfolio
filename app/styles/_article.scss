@@ -110,10 +110,10 @@ article {
   }
 
   &:nth-of-type(1) {
-    @include articlecolor(rgba(115,40,210,0.6), rgba(40,146,210,0.8), rgba(40,146,210,0.7));
+    @include articlecolor(rgb(115,40,210), rgba(40,146,210,0.8), rgba(40,146,210,0.7));
   }
 
   &:nth-of-type(2) {
-    @include articlecolor(rgba(40,94,210,0.6), rgba(211,158,229,0.8), rgba(211,158,229,0.7));
+    @include articlecolor(rgb(40,94,210), rgba(211,158,229,0.8), rgba(211,158,229,0.7));
   }
 }
