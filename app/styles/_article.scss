@@ -1,18 +1,22 @@
 // Mixins
-@mixin articlecolor($backgroundcolor, $textcolor, $ahovercolor) {
+@mixin articlecolor($backgroundcolor, $h2color, $h3color, $bordercolor, $textcolor, $ahovercolor) {
   background-color: $backgroundcolor;
 
   div.wrapper {
+    color: $textcolor;
+
     header {
-      h2:before {
-        color: $textcolor;
+      h2 {
+        color: $h2color;
       }
     }
 
     div.border {
+      border-left: 10px $bordercolor dotted;
+
       section {
         h3 {
-          color: $textcolor;
+          color: $h3color;
         }
 
         a:hover {
@@ -23,20 +27,22 @@
 
       footer {
         p {
-          border-bottom: 1px $textcolor dotted;
+          border-bottom: 1px $bordercolor dotted;
         }
       }
     }
   }
 }
 // Scss
+
 article {
-  color: white;
   height: 100vh;
   width: 100vw;
   position: relative;
+  z-index: 1;
 
   div.wrapper {
+    color: white;
     position: absolute;
     top: 50%;
     left: 150px;
@@ -60,7 +66,6 @@ article {
 
     div.border {
       padding-left: 20px;
-      border-left: 10px rgba(255, 255, 255, 0.1) dotted;
       border-bottom-left-radius: 30px;
       width: 60%;
       text-align: left;
@@ -89,7 +94,7 @@ article {
           font-style: italic;
           text-decoration: none;
           border-bottom: 1px white dotted;
-          transition: all 1s ease-out;
+          transition: all 0.4s ease-out;
         }
       }
 
@@ -110,10 +115,22 @@ article {
   }
 
   &:nth-of-type(1) {
-    @include articlecolor(rgb(115,40,210), rgba(40,146,210,0.8), rgba(40,146,210,0.7));
+    @include articlecolor(rgb(53,52,54), rgba(40,146,210,0.8), rgba(40,146,210,0.7), rgba(40,146,210,0.7), white, rgba(40,146,210,0.7));
   }
 
   &:nth-of-type(2) {
-    @include articlecolor(rgb(40,94,210), rgba(211,158,229,0.8), rgba(211,158,229,0.7));
+    @include articlecolor(rgb(75,50,25), rgba(235,205,125,0.8), rgb(235,205,125), rgb(210,192,162), white, rgba(211,158,229,0.7));
+  }
+
+  &:nth-of-type(3) {
+    @include articlecolor(rgb(13,37,76), rgba(41,135,217,0.8), rgba(41,135,217,0.8), rgb(41,135,217), white, rgba(41,135,217,0.7));
+  }
+
+  &:nth-of-type(4) {
+    @include articlecolor(rgb(29,29,29), rgba(204,128,185,0.8), rgba(164,191,143,0.8), rgba(204,128,185,0.7), white, rgba(204,128,185,0.8));
+  }
+
+  &:nth-of-type(5) {
+    @include articlecolor(rgb(6,6,6), rgba(253,243,137,0.8), rgba(253,243,137,0.8), rgba(253,243,137,0.7), white, rgba(253,243,137,0.7));
   }
 }

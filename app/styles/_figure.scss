@@ -5,7 +5,7 @@ figure {
     position: fixed;
     top: 50%;
     right: -300px;
-    z-index: 5;
+    z-index: 3;
     opacity: 0;
     animation: startsvg 6s forwards ease-out, animesvg 3.2s 7s ease-out infinite alternate;
   }
