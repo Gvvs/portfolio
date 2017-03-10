@@ -86,7 +86,6 @@ article {
         p {
           margin: 8px 0;
           line-height: 1.3em;
-          text-indent: 20px;
         }
 
         a {
@@ -120,7 +119,7 @@ article {
   }
 
   &:nth-of-type(2) {
-    @include articlecolor(rgb(75,50,25), rgba(235,205,125,0.8), rgb(235,205,125), rgb(210,192,162), white, rgba(211,158,229,0.7));
+    @include articlecolor(rgb(75,50,25), rgba(235,205,125,0.8), rgb(235,205,125), rgb(210,192,162), white, rgba(235,205,125,0.7));
   }
 
   &:nth-of-type(3) {
