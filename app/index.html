@@ -59,7 +59,7 @@
     ga('send', 'pageview');
   </script>
   <!-- END Google Analytics -->
-  <header>
+  <header id="banner">
     <div id="geometric"></div>
     <div id="link">
       <div class="home">
@@ -67,10 +67,10 @@
       </div>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/blephy/" title="Allan Linkedin's profil" target="_blank"><img src="images/social/linkedin.svg" alt="Logo LinkedIn vert" class="logo-social"><span class="social">LinkedIn</span></a>
+          <a href="https://www.linkedin.com/in/blephy/" title="Allan Linkedin's profil" target="_blank"><img src="images/social/linkedin.svg" alt="Logo LinkedIn vert" class="logo-social"><span class="text-social">LinkedIn</span></a>
         </li>
         <li>
-          <a href="https://github.com/blephy" title="Allan Github's profil" target="_blank"><img src="images/social/github.svg" alt="Logo GitHub vert" class="logo-social"><span class="social">GitHub</span></a>
+          <a href="https://github.com/blephy" title="Allan Github's profil" target="_blank"><img src="images/social/github.svg" alt="Logo GitHub vert" class="logo-social"><span class="text-social">GitHub</span></a>
         </li>
       </ul>
     </div>
@@ -78,7 +78,7 @@
       <h1>Hello World</h1>
       <h2>I’m Allan Dollé, a French Web &amp; SEO developer <br>searching for an internship this summer.</h2>
       <div class="wrapper">
-        <button type="button" name="Scroll to my project">Do you want me to show you my projects ?</button>
+        <a href="#" title="Take me to the projects">Do you want me to show you my projects ?</a>
         <span class="decoration"></span>
       </div>
     </div>
@@ -86,6 +86,64 @@
       <img src="images/me/allan-exp-3.svg" alt="Expression de Allan Dollé" class="allan-exp-3">
     </div>
   </header>
+  <main>
+    <article>
+      <header>
+        <h2>Amp Fender Tweed</h2>
+        <h1>Princetone 5FA2</h1>
+      </header>
+      <section>
+        <p>Do you like the pure vintage sound of the 60's? This project was made for that! A lamp amplifier with 100% epoch components. Nothing is better now.</p>
+      </section>
+      <footer>
+        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+      </footer>
+      <aside>
+      </aside>
+    </article>
+    <article>
+      <header>
+        <h2>Automated</h2>
+        <h1>Freshwater Aqua</h1>
+      </header>
+      <section>
+        <p>From automatic water change, to pH management, to the study of the wavelength of light to match the photosynthesis during the day.</p>
+      </section>
+      <footer>
+        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+      </footer>
+      <aside>
+      </aside>
+    </article>
+    <article>
+      <header>
+        <h2>Digital strategy</h2>
+        <h1>For a psychologist</h1>
+      </header>
+      <section>
+        <p>How digital marketing and SEO can make it possible to start his liberal career in a sector of activity with strong competition. Improve your visibility, your turnover, and automate your accounting tasks…</p>
+      </section>
+      <footer>
+        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+      </footer>
+      <aside>
+      </aside>
+    </article>
+    <article>
+      <header>
+        <h2>Short film</h2>
+        <h1>Les aliénés</h1>
+      </header>
+      <section>
+        <p>Making a short film and its promotion in 10 days with 10 people without ever having audio-visual training is no small matter. But we did, and we finished first.</p>
+      </section>
+      <footer>
+        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+      </footer>
+      <aside>
+      </aside>
+    </article>
+  </main>
   <aside id="dev">
     <span>1</span>
     <span>2</span>
@@ -126,15 +184,44 @@
     <span>37</span>
     <span>38</span>
     <span>39</span>
+    <span>40</span>
+    <span>41</span>
+    <span>42</span>
+    <span>43</span>
+    <span>44</span>
+    <span>45</span>
+    <span>46</span>
+    <span>47</span>
+    <span>48</span>
+    <span>49</span>
   </aside>
-  <main>
-  </main>
-
-  <footer>
+  <footer id="email-credits">
+    <section id="email">
+      <h1>So are you interested yet ?</h1>
+      <p>I’m a team player who loves to collaborate with other people, next to good cup of coffee.</p>
+      <div class="wrapper">
+        <a href="https://www.linkedin.com/in/blephy/" title="Allan Linkedin's profil" target="_blank"><img src="images/social/linkedin-white.svg" alt="Logo LinkedIn white" class="logo-social"></a>
+        <a href="https://github.com/blephy" title="Allan Github's profil" target="_blank"><img src="images/social/github-white.svg" alt="Logo GitHub white" class="logo-social"></a>
+        <a href="mailto:dolle.allan@gmail.com" title="Send me an email !">Send me an email_</a>
+      </div>
+    </section>
+    <section id="credits">
+      <p>-Illustration &amp; Design credits : <a>Aymeric Sans</a></p>
+    </section>
   </footer>
+
 
   <!-- BEGIN Scripts -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script type="text/javascript">
+    // Calcul Height of the best container height
+    var body = document.body,
+      html = document.documentElement;
+
+    var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    console.log(height);
+  </script>
   <!-- END Scripts -->
 </body>
 

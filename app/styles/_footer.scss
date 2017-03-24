@@ -1,0 +1,116 @@
+footer#email-credits {
+  position: relative;
+  height: 600px;
+  width: 100vw;
+  background-color: #199a8f;
+  color: white;
+
+  section#email {
+    position: absolute;
+    top: 151px;
+    left: 10%;
+    width: 550px;
+
+    h1 {
+      font-family: 'Averta-Bold', sans-serif;
+      font-size: 48px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: -2.4px;
+      margin: 0 0 7px;
+    }
+
+    p {
+      font-family: 'Averta-Regular', sans-serif;
+      font-size: 22px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.55;
+      letter-spacing: normal;
+      opacity: 0.87;
+      margin: 0 0 32px;
+    }
+
+    div.wrapper {
+      display: block;
+      height: 36px;
+
+      a {
+        display: inline-block;
+        margin: 6px 18px 0 0;
+        border-radius: 50%;
+        float: left;
+        transition: all 0.24s ease-out;
+      }
+
+      a:hover {
+        transform: scale(1.2);
+      }
+
+      a:nth-of-type(2) {
+        margin-right: 36px;
+      }
+
+      a:nth-of-type(3) {
+        margin: 0;
+        text-decoration: none;
+        display: inline-block;
+        height: 36px;
+        border: 1px solid #199a8f;
+        border-radius: 19px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 36px;
+        letter-spacing: normal;
+        color: #199a8f;
+        padding: 0 24px;
+        transition: none;
+      }
+
+      a:nth-of-type(3):hover {
+        transform: none;
+        box-shadow: none;
+      }
+
+      img.logo-social {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  section#credits {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100vw;
+    opacity: 0.8;
+    background-color: #228078;
+
+    p {
+      font-family: 'Averta-Regular-Italic', sans-serif;
+      font-size: 12px;
+      font-weight: 300;
+      font-stretch: normal;
+      line-height: 60px;
+      letter-spacing: normal;
+      padding-left: 10%;
+      margin: 0;
+
+      a {
+        text-decoration: none;
+        font-weight: normal;
+      }
+    }
+  }
+}

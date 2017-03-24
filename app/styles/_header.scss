@@ -2,10 +2,8 @@
 // Variables
 $border-bottom-geometric: 60vh; // Content
 
-header {
+header#banner {
   position: relative;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   color: white;
@@ -49,11 +47,12 @@ header {
           text-decoration: none;
           display: block;
           height: 32px;
+          border: 1px solid #199a8f;
           border-radius: 16px;
           background-color: white;
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
 
-          span.social {
+          span.text-social {
             padding: 0 16px 0 7px;
             font-family: 'Gotham-Book';
             font-size: 14px;
@@ -72,6 +71,10 @@ header {
             object-fit: contain;
             float: left;
           }
+        }
+
+        a:hover {
+          box-shadow: none;
         }
       }
     }
@@ -94,8 +97,9 @@ header {
       letter-spacing: -2.4px;
     }
 
-    h1:after {
+    h1::after {
       content: '_';
+      padding-left: 3px;
     }
 
     h2 {
@@ -110,19 +114,30 @@ header {
       letter-spacing: normal;
     }
 
-    div.wrapper {
-        position: inherit;
-    }
-    button {
-      padding: 0 20px 0 20px;
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-family: 'Averta-Regular', sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: normal;
+      font-stretch: normal;
+      padding: 0 20px;
       height: 36px;
       line-height: 36px;
       border-radius: 19px;
       border: solid 1px #ffffff;
-      background-color: transparent;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 14px;
+      transition: all 0.24s ease-out;
+    }
+
+    a:hover {
+        color: #199a8f;
+        background-color: white;
     }
 
     span.decoration {

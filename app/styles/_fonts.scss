@@ -11,12 +11,18 @@
   src: url('../fonts/Averta/Averta-Bold/Averta-Bold.otf');
 }
 @font-face {
+  font-family: 'Averta-Regular-Italic';
+  src: url('../fonts/Averta/Averta-RegularItalic/Averta-Regular-Italic.otf');
+}
+@font-face {
   font-family: 'Gotham-Medium';
-  src: url('../fonts/Gotham/Gotham/Gotham-Medium.otf'),
-  url('../fonts/Gotham/Gotham/Gotham-Medium.ttf');
+  src: url('../fonts/Gotham/Gotham/Gotham-Medium.otf'), url('../fonts/Gotham/Gotham/Gotham-Medium.ttf');
 }
 @font-face {
   font-family: 'Gotham-Book';
-  src: url('../fonts/Gotham/Gotham/Gotham-Book.otf'),
-  url('../fonts/Gotham/Gotham/Gotham-Book.ttf');
+  src: url('../fonts/Gotham/Gotham/Gotham-Book.otf'), url('../fonts/Gotham/Gotham/Gotham-Book.ttf');
+}
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('../fonts/Gotham/Gotham/Gotham-Light.otf'), url('../fonts/Gotham/Gotham/Gotham-Light.ttf');
 }
