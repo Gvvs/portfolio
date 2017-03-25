@@ -1,4 +1,13 @@
 // Scss file for <article> in the document
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
 
 article {
   position: relative;
@@ -105,6 +114,10 @@ article {
 
     a:hover span {
       color: #ffffff;
+    }
+
+    a:hover span::after {
+      animation: blink 1s infinite alternate ease-in-out;
     }
   }
 }
