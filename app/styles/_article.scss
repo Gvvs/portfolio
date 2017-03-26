@@ -120,4 +120,9 @@ article {
       animation: blink 1s infinite alternate ease-in-out;
     }
   }
+
+  #triggerInitScale {
+      position: absolute;
+      top: -250px;
+  }
 }

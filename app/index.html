@@ -63,7 +63,7 @@
     <div id="geometric"></div>
     <div id="link">
       <div class="home">
-        Allan
+        <h3>Allan Dollé</h3>
       </div>
       <ul>
         <li>
@@ -78,16 +78,19 @@
       <h1>Hello World</h1>
       <h2>I’m Allan Dollé, a French Web &amp; SEO developer <br>searching for an internship this summer.</h2>
       <div class="wrapper">
-        <a href="#" title="Take me to the projects">Do you want me to show you my projects ?</a>
+        <a href="#triggerInitScale" title="Take me to the projects">Do you want me to show you my projects ?</a>
         <span class="decoration"></span>
       </div>
     </div>
-    <div id="logo">
-      <img src="images/me/allan-exp-3.svg" alt="Expression de Allan Dollé" class="allan-exp-3">
+    <div id="logo-wrapper">
+      <!-- <p id="sentence">We called me MacGiver…</p> -->
+      <div id="logo">
+        <img id="me" src="images/me/allan-exp-3.svg" alt="Expression de Allan Dollé" class="allan-exp-3">
+      </div>
     </div>
   </header>
   <main>
-    <article>
+    <article id="triggerAmp">
       <header>
         <h2>Amp Fender Tweed</h2>
         <h1>Princetone 5FA2</h1>
@@ -96,12 +99,12 @@
         <p>Do you like the pure vintage sound of the 60's? This project was made for that! A lamp amplifier with 100% epoch components. Nothing is better now.</p>
       </section>
       <footer>
-        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+        <a href="" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
       </footer>
-      <aside>
-      </aside>
+      <div id="triggerInitScale">
+      </div>
     </article>
-    <article>
+    <article id="triggerAqua">
       <header>
         <h2>Automated</h2>
         <h1>Freshwater Aqua</h1>
@@ -110,12 +113,12 @@
         <p>From automatic water change, to pH management, to the study of the wavelength of light to match the photosynthesis during the day.</p>
       </section>
       <footer>
-        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+        <a href="" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
       </footer>
       <aside>
       </aside>
     </article>
-    <article>
+    <article id="triggerPsy">
       <header>
         <h2>Digital strategy</h2>
         <h1>For a psychologist</h1>
@@ -124,12 +127,12 @@
         <p>How digital marketing and SEO can make it possible to start his liberal career in a sector of activity with strong competition. Improve your visibility, your turnover, and automate your accounting tasks…</p>
       </section>
       <footer>
-        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+        <a href="" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
       </footer>
       <aside>
       </aside>
     </article>
-    <article>
+    <article id="triggerFilm">
       <header>
         <h2>Short film</h2>
         <h1>Les aliénés</h1>
@@ -138,13 +141,13 @@
         <p>Making a short film and its promotion in 10 days with 10 people without ever having audio-visual training is no small matter. But we did, and we finished first.</p>
       </section>
       <footer>
-        <a href="#" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
+        <a href="" title="AMP Fender Tweed Princetone 5F2A DIY Project"><span>Discover project</span></a>
       </footer>
-      <aside>
-      </aside>
     </article>
   </main>
   <footer id="email-credits">
+    <div id="triggerFinishScale">
+    </div>
     <section id="email">
       <h1>So are you interested yet ?</h1>
       <p>I’m a team player who loves to collaborate with other people, next to good cup of coffee.</p>
@@ -164,43 +167,43 @@
 
   <!-- BEGIN Scripts -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+  <script type="text/javascript" src="scripts/animation.gsap.js"></script>
+  <script type="text/javascript" src="scripts/writeNumbers.js"></script>
+  <script type="text/javascript" src="scripts/custom.animation.js"></script>
   <script type="text/javascript">
-    // Constantes
-    const body = document.body;
-    const html = document.documentElement;
-    const asideNumber = $('#dev');
+    // init controller
+    var controller = new ScrollMagic.Controller();
 
-    // Variables
-    var heightNumber = 12 * 1.67;
+    // Images SVG Array
+    var images = [
+      "images/me/allan-exp-1.svg",
+      "images/me/allan-exp-2.svg",
+      "images/me/allan-exp-3.svg",
+      "images/me/allan-exp-4.svg",
+      "images/me/allan-exp-5.svg",
+      "images/me/allan-exp-2-hover.svg",
+    ];
 
-    // Functions
-    function heightCalcule() {
-      // Calcul Height of the best container height
-      return documentHeight = Math.max(body.scrollHeight, body.offsetHeight,html.clientHeight, html.scrollHeight, html.offsetHeight);
-    }
+    controller.scrollTo(function (newpos) {
+		TweenMax.to(window, 1, {scrollTo: {y: newpos}});
+	});
 
-    function writeAsideNumber(e) {
-      asideNumber.empty();
-      let numberOfSpan = Math.round((e - 64) / heightNumber) + 1;
-      for (i = 1; i < numberOfSpan; i++) {
-        asideNumber.append('<span>' + i + '</span>');
+    $(document).on("click", "a[href^='#']", function(e) {
+      var id = $(this).attr("href");
+      if ($(id).length > 0) {
+        e.preventDefault();
+
+        // trigger scroll
+        controller.scrollTo(id);
+
+        // if supported by the browser we can even update the URL.
+        if (window.history && window.history.pushState) {
+          history.pushState("", document.title, id);
+        }
       }
-    }
-
-    // EventListeners
-    $(window).resize(function() {
-      console.log('window resized');
-      setTimeout(function() {
-        writeAsideNumber(heightCalcule());
-        console.log('Aside Number rewrited');
-      }, 1000);
-    });
-
-    // On document ready
-    $(document).ready(function() {
-      console.log("ready!");
-      writeAsideNumber(heightCalcule());
     });
   </script>
   <!-- END Scripts -->
