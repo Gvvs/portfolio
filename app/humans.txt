@@ -3,8 +3,13 @@ Name:Allan Dollé
 Job: Developer front-end
 From:Paris, France, HETIC
 
+/* THANKS */
+Name:Aymeric Sans
+Job: UX/UI Designer
+From:Paris, France, HETIC
+
 /* SITE */
-Last update:2017/03/10
+Last update:2017/03/27
 Language: English
 Doctype:HTML5
 IDE: Atom
