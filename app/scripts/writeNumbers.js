@@ -15,7 +15,7 @@ function heightCalcule() {
 function writeAsideNumbers(e) {
   asideNumber.empty();
   let numberOfSpan = Math.round((e - 64) / heightNumber) + 1;
-  for (i = 1; i < numberOfSpan; i++) {
+  for (var i = 1; i < numberOfSpan; i++) {
     asideNumber.append('<span>' + i + '</span>');
   }
 }

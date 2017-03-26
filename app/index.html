@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Allan Dollé - French web developer and SEO expert</title>
+  <title>Allan Dollé - Web developer and SEO expert</title>
+    <meta name="description" content="I'm Allan Dollé, a french web developer and SEO expert. Take a look to my portfolio and learn more about me.">
   <meta name="robots" content="noindex, nofollow">
 
   <!-- Disable tap highlight on IE -->
@@ -36,9 +36,9 @@
   <link rel="stylesheet" type="text/css" href="styles/all.css">
 
   <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-  <!--
-    <link rel="canonical" href="http://www.example.com/">
--->
+
+  <link rel="canonical" href="https://allandolle.fr">
+
 </head>
 
 <body>
@@ -187,9 +187,13 @@
       "images/me/allan-exp-2-hover.svg",
     ];
 
-    controller.scrollTo(function (newpos) {
-		TweenMax.to(window, 1, {scrollTo: {y: newpos}});
-	});
+    controller.scrollTo(function(newpos) {
+      TweenMax.to(window, 1, {
+        scrollTo: {
+          y: newpos
+        }
+      });
+    });
 
     $(document).on("click", "a[href^='#']", function(e) {
       var id = $(this).attr("href");
