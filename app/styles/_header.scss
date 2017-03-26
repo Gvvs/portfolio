@@ -1,7 +1,4 @@
 // Scss file for the first <header> in the document
-// Variables
-$border-bottom-geometric: 60vh; // Content
-
 header#banner {
   position: relative;
   width: 100vw;
@@ -13,7 +10,7 @@ header#banner {
     position: absolute;
     top: 0;
     left: 0;
-    border-left: 100vw solid #199a8f;
+    border-left: 100vw solid $colorGreen;
     border-bottom: $border-bottom-geometric solid transparent;
     height: calc(100vh - #{$border-bottom-geometric});
     width: 0;
@@ -50,7 +47,7 @@ header#banner {
           text-decoration: none;
           display: block;
           height: 32px;
-          border: 1px solid #199a8f;
+          border: 1px solid $colorGreen;
           border-radius: 16px;
           background-color: white;
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
@@ -64,7 +61,7 @@ header#banner {
             font-stretch: normal;
             line-height: 32px;
             letter-spacing: normal;
-            color: #1b8a7c;
+            color: $colorGreen;
           }
 
           img.logo-social {
@@ -139,7 +136,7 @@ header#banner {
     }
 
     a:hover {
-      color: #199a8f;
+      color: $colorGreen;
       background-color: white;
     }
 

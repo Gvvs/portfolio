@@ -1,14 +1,4 @@
 // Scss file for <article> in the document
-@keyframes blink {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
 article {
   position: relative;
   width: 100vw;
@@ -27,7 +17,7 @@ article {
       font-stretch: normal;
       line-height: 1.04;
       letter-spacing: -0.4px;
-      color: #199a8f;
+      color: $colorGreen;
       opacity: 0.87;
       margin: 0 0 21px;
       text-transform: uppercase;
@@ -84,7 +74,7 @@ article {
       display: block;
       width: 165px;
       height: 44px;
-      border: solid 1px #199a8f;
+      border: solid 1px $colorGreen;
       text-align: center;
       text-decoration: none;
       transition: all 0.24s ease-out;
@@ -97,7 +87,7 @@ article {
         font-stretch: normal;
         line-height: 44px;
         letter-spacing: -0.7px;
-        color: #199a8f;
+        color: $colorGreen;
         transition: all 0.34s ease-out;
       }
 
@@ -108,8 +98,8 @@ article {
     }
 
     a:hover {
-      background-color: #199a8f;
-      border: solid 1px #199a8f;
+      background-color: $colorGreen;
+      border: solid 1px $colorGreen;
     }
 
     a:hover span {
