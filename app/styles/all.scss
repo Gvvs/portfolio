@@ -1,9 +1,11 @@
+// Main SCSS file.
 body {
     width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
+// All the import scss files
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
@@ -11,7 +13,7 @@ body {
 @import 'aside';
 @import 'article';
 @import 'footer';
-
+// Some media query
 @media screen and (max-width: 1040px) {
   section#logo-wrapper {
       display: none;
