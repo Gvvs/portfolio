@@ -12,8 +12,8 @@ body {
 @import 'article';
 @import 'footer';
 
-@media screen and (max-width: 1020px) {
-  div#logo-wrapper {
+@media screen and (max-width: 1040px) {
+  section#logo-wrapper {
       display: none;
   }
 }

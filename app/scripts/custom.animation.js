@@ -28,53 +28,88 @@ $(function() {
     "images/me/allan-exp-3.svg",
     "images/me/allan-exp-4.svg",
     "images/me/allan-exp-5.svg",
-    "images/me/allan-exp-2-hover.svg",
+    "images/me/allan-exp-2-hover.svg"
   ];
+  // Define variables
+  var quote = $("#quote");
+  var logo = $("#me");
+  var quoteSentence = [
+    "My first electronic project…",
+    "Don't be afraid little fish !",
+    "She has too many patients now…",
+    "We called me MacGiver…"
+  ];
+
+  function eraseQuote() {
+    return quote.text("");
+  }
+
+
   // build tween
-  var tweenInitScale = TweenMax.to('#logo-wrapper', 2, {
+  var tweenInitScale = TweenMax.to("#logo", 2, {
     css: {
       scaleX: 0.53,
-      scaleY: 0.53,
-      top: '42%',
-      right: '5%'
+      scaleY: 0.53
     },
     ease: Linear.easeNone,
     onUpdate: function() {
-      $("#me").attr("src", images[2]); // set the image source
+      logo.attr("src", images[2]); // set the image source
+      if (quote.text() != "") {
+        eraseQuote();
+        quote.css("display", "none");
+      }
     }
   });
-  var tweenFinishScale = TweenMax.to('#logo-wrapper', 2, {
+  var tweenFinishScale = TweenMax.to("#logo", 2, {
     css: {
       scaleX: 1,
-      scaleY: 1,
-      top: '50%',
-      right: '10%'
+      scaleY: 1
     },
     ease: Linear.easeNone,
     onUpdate: function() {
-      $("#me").attr("src", images[1]); // set the image source
+      logo.attr("src", images[1]); // set the image source
+      if (quote.text() != "") {
+        eraseQuote();
+        quote.css("display", "none");
+      }
     }
   });
-  var tweenAmp = TweenMax.to('#me', 0.5, {
+  var tweenAmp = TweenMax.to("#me", 0.5, {
     onUpdate: function() {
-      $("#me").attr("src", images[3]); // set the image source
+      logo.attr("src", images[3]); // set the image source
+      if (quote.text() != quoteSentence[0]) {
+        quote.text(quoteSentence[0]);
+        quote.css("display", "inline-block");
+      }
     }
-  })
-  var tweenAqua = TweenMax.to('#me', 0.5, {
+  });
+  var tweenAqua = TweenMax.to("#me", 0.5, {
     onUpdate: function() {
-      $("#me").attr("src", images[0]); // set the image source
+      logo.attr("src", images[0]); // set the image source
+      if (quote.text() != quoteSentence[1]) {
+        quote.text(quoteSentence[1]);
+        quote.css("display", "inline-block");
+      }
     }
-  })
-  var tweenPsy = TweenMax.to('#me', 0.5, {
+  });
+  var tweenPsy = TweenMax.to("#me", 0.5, {
     onUpdate: function() {
-      $("#me").attr("src", images[3]); // set the image source
+      logo.attr("src", images[2]); // set the image source
+      if (quote.text() != quoteSentence[2]) {
+        quote.text(quoteSentence[2]);
+        quote.css("display", "inline-block");
+      }
     }
-  })
-  var tweenFilm = TweenMax.to('#me', 0.5, {
+  });
+  var tweenFilm = TweenMax.to("#me", 0.5, {
     onUpdate: function() {
-      $("#me").attr("src", images[4]); // set the image source
+      logo.attr("src", images[3]); // set the image source
+      if (quote.text() != quoteSentence[3]) {
+        quote.text(quoteSentence[3]);
+        quote.css("display", "inline-block");
+      }
     }
-  })
+  });
 
   // build MagicScroll scenes
   var initSceneScale = new ScrollMagic.Scene({
@@ -115,16 +150,16 @@ $(function() {
     .addTo(controller);
 
   $("#email .wrapper").mouseover(function() {
-    TweenMax.to('#me', 0.5, {
+    TweenMax.to("#me", 0.5, {
       onUpdate: function() {
-        $("#me").attr("src", images[5]); // set the image source
+        logo.attr("src", images[5]); // set the image source
       }
     })
   });
   $("#email .wrapper").mouseleave(function() {
-    TweenMax.to('#me', 0.5, {
+    TweenMax.to("#me", 0.5, {
       onUpdate: function() {
-        $("#me").attr("src", images[1]); // set the image source
+        logo.attr("src", images[1]); // set the image source
       }
     })
   });

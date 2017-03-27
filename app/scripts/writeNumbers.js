@@ -4,7 +4,7 @@ const html = document.documentElement;
 const asideNumber = $('#dev');
 
 // Variables
-var heightNumber = 12 * 1.67;
+var heightNumber = 10 * 2;
 
 // Functions
 function heightCalcule() {
@@ -14,7 +14,7 @@ function heightCalcule() {
 
 function writeAsideNumbers(e) {
   asideNumber.empty();
-  let numberOfSpan = Math.round((e - 64) / heightNumber) + 1;
+  let numberOfSpan = Math.round((e - 64) / heightNumber);
   for (var i = 1; i < numberOfSpan; i++) {
     asideNumber.append('<span>' + i + '</span>');
   }
