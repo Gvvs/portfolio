@@ -1,4 +1,5 @@
 // Scss file for the first <header> in the document
+
 header#banner {
   position: relative;
   width: 100vw;
@@ -159,6 +160,7 @@ header#banner {
     z-index: 1001;
 
     h4#quote {
+      display: none;
       position: absolute;
       top: 10px;
       transform: translateX(-50%);
@@ -175,16 +177,17 @@ header#banner {
       margin: 0;
       padding: 0;
     }
+
     h4#quote::after {
-        content: '';
-        position: absolute;
-        top: 22px;
-        transform: translateX(-100%);
-        width: 80px;
-        height: 22px;
-        background-image: url(/images/talk.svg);
-        background-repeat: no-repeat;
-        background-position: right bottom;
+      content: '';
+      position: absolute;
+      top: 22px;
+      transform: translateX(-100%);
+      width: 80px;
+      height: 22px;
+      background-image: url("/images/talk.svg");
+      background-repeat: no-repeat;
+      background-position: right bottom;
     }
 
     div#logo {

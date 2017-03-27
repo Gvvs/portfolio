@@ -39,12 +39,9 @@ $(function() {
     "She has too many patients now…",
     "We called me MacGiver…"
   ];
-
   function eraseQuote() {
     return quote.text("");
   }
-
-
   // build tween
   var tweenInitScale = TweenMax.to("#logo", 2, {
     css: {
