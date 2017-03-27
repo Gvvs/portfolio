@@ -60,7 +60,7 @@ $(function() {
   var tweenFinishScale = TweenMax.to("#logo", 2, {
     css: {
       scaleX: 1,
-      scaleY: 1
+      scaleY: 1,
     },
     ease: Linear.easeNone,
     onUpdate: function() {
