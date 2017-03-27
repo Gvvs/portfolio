@@ -1,8 +1,35 @@
 $(function() {
   // wait for document ready
-  console.log('ready!');
+  console.log('! ! ! Document ready ! ! !');
+  console.log('- - - W E L C O M - - -');
+  // Write Numbers inside first <aside> element
   writeAsideNumbers(heightCalcule());
-
+  // Initiate MagicScroll controller
+  var controller = new ScrollMagic.Controller();
+  // Smooth Scroll
+  controller.scrollTo(function(newpos) {
+    TweenMax.to(window, 1, {
+      scrollTo: {
+        y: newpos
+      }
+    });
+  });
+  $(document).on("click", "a[href^='#']", function(e) {
+    var id = $(this).attr("href");
+    if ($(id).length > 0) {
+      e.preventDefault();
+      controller.scrollTo(id);
+    }
+  });
+  // Define images for TweenMax animations
+  var images = [
+    "images/me/allan-exp-1.svg",
+    "images/me/allan-exp-2.svg",
+    "images/me/allan-exp-3.svg",
+    "images/me/allan-exp-4.svg",
+    "images/me/allan-exp-5.svg",
+    "images/me/allan-exp-2-hover.svg",
+  ];
   // build tween
   var tweenInitScale = TweenMax.to('#logo-wrapper', 2, {
     css: {
@@ -40,12 +67,12 @@ $(function() {
   })
   var tweenPsy = TweenMax.to('#me', 0.5, {
     onUpdate: function() {
-      $("#me").attr("src", images[4]); // set the image source
+      $("#me").attr("src", images[3]); // set the image source
     }
   })
   var tweenFilm = TweenMax.to('#me', 0.5, {
     onUpdate: function() {
-      $("#me").attr("src", images[3]); // set the image source
+      $("#me").attr("src", images[4]); // set the image source
     }
   })
 
