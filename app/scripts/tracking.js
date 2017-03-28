@@ -1,6 +1,6 @@
 // Insert Tracking for analytics
 class Track {
-  constructor(selector, category, label, value) {
+  constructor(selector, category = "", label = "", value = "") {
     this.selector = selector;
     this.category = category;
     this.label = label;
@@ -8,8 +8,8 @@ class Track {
 
     // Keep Track's this
     const self = this;
-    this.selector.on('click',function(e){
-        self.onClick(this);
+    this.selector.on('click', function() {
+      self.onClick(this);
     });
   }
   send() {
@@ -19,15 +19,16 @@ class Track {
     return console.log("Send tracking " + "category:" + this.category + ", label:" + this.label + ", value:" + this.value);
   }
   onClick(selector) {
-      this.label = $(selector).data("label");
-      this.value = $(selector).data("value");
-      this.send();
-      this.log();
+    this.category = $(selector).data("track");
+    this.label = $(selector).data("label");
+    this.value = $(selector).data("value");
+    this.send();
+    this.log();
   }
 }
 
 // Instances of Track class
-var social = new Track($("a[data-track='social']"), "Social", "", "");
-var discover = new Track($("a[data-track='discover']"), "Discover", "", "");
-var credits = new Track($("a[data-track='credits']"), "Credits", "", "");
-var email = new Track($("a[data-track='email']"), "Email", "", "");
+var social = new Track($("a[data-track='Social']"));
+var discover = new Track($("a[data-track='Discover']"));
+var credits = new Track($("a[data-track='Credit']"));
+var email = new Track($("a[data-track='Email']"));
