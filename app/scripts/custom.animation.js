@@ -5,8 +5,9 @@ function autoType(elementClass, typingSpeed, delay) {
   var amntOfChars = text.length;
   var newString = "";
   setTimeout(function() {
-    selector.removeClass("hidden");
     selector.text("");
+    selector.removeClass("hidden");
+    selector.removeClass("display-none");
     for (var i = 0; i < amntOfChars; i++) {
       (function(i, char) {
         setTimeout(function() {
@@ -24,7 +25,8 @@ $(function() {
   console.log('! ! ! Document ready ! ! !');
   console.log('- - - W E L C O M - - -');
   // Animation Hello World typing
-  autoType(".type-js", 115, 700);
+  autoType(".typing-hello", 115, 700);
+  // autoType(".typing-about", 15, 2000);
   // Write Numbers inside first <aside> element
   writeAsideNumbers(heightCalcule());
   // Initiate MagicScroll controller

@@ -83,7 +83,7 @@ header#banner {
   section#content {
     position: absolute;
     top: 25%;
-    left: 10%;
+    left: $pad-marg-left;
     text-align: left;
 
     h1 {
