@@ -1,15 +1,16 @@
 // Scss file for the first <footer> in the document
 footer#email-credits {
   position: relative;
-  height: 600px;
+  height: 80vh;
   width: 100vw;
   background-color: $colorGreen;
   color: white;
 
   section#email {
     position: absolute;
-    top: 151px;
+    top: calc(50% - #{$creditsHeight});
     left: 10%;
+    transform: translateY(-50%);
     width: 550px;
 
     h1 {
@@ -32,7 +33,7 @@ footer#email-credits {
       line-height: 1.55;
       letter-spacing: normal;
       opacity: 0.87;
-      margin: 0 0 32px;
+      margin: 0 0 64px;
     }
 
     div.wrapper {
@@ -99,7 +100,7 @@ footer#email-credits {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 60px;
+    height: $creditsHeight;
     width: 100vw;
     opacity: 0.8;
     background-color: #228078;

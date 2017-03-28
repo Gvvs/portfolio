@@ -39,6 +39,7 @@ $(function() {
     "She has too many patients now…",
     "We called me MacGiver…"
   ];
+
   function eraseQuote() {
     return quote.text("");
   }
@@ -110,37 +111,37 @@ $(function() {
 
   // build MagicScroll scenes
   var initSceneScale = new ScrollMagic.Scene({
-      triggerElement: '#triggerInitScale',
+      triggerElement: "#triggerInitScale",
       duration: 220
     })
     .setTween(tweenInitScale)
     .addTo(controller);
   var finishSceneScale = new ScrollMagic.Scene({
-      triggerElement: '#triggerFinishScale',
+      triggerElement: "#triggerFinishScale",
       duration: 190
     })
     .setTween(tweenFinishScale)
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
-      triggerElement: '#triggerAmp',
+      triggerElement: "#triggerAmp",
       duration: 400
     })
     .setTween(tweenAmp)
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
-      triggerElement: '#triggerAqua',
+      triggerElement: "#triggerAqua",
       duration: 400
     })
     .setTween(tweenAqua)
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
-      triggerElement: '#triggerPsy',
+      triggerElement: "#triggerPsy",
       duration: 400
     })
     .setTween(tweenPsy)
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
-      triggerElement: '#triggerFilm',
+      triggerElement: "#triggerFilm",
       duration: 400
     })
     .setTween(tweenFilm)
