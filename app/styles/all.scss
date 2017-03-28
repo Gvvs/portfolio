@@ -5,6 +5,9 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+.hidden {
+    opacity: 0;
+}
 // All the import scss files
 @import 'variables';
 @import 'mixins';

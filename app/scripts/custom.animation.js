@@ -1,7 +1,30 @@
+// Typing text function
+function autoType(elementClass, typingSpeed, delay) {
+  var selector = $(elementClass);
+  var text = selector.text().trim().split('');
+  var amntOfChars = text.length;
+  var newString = "";
+  setTimeout(function() {
+    selector.removeClass("hidden");
+    selector.text("");
+    for (var i = 0; i < amntOfChars; i++) {
+      (function(i, char) {
+        setTimeout(function() {
+          newString += char;
+          selector.text(newString);
+        }, i * typingSpeed);
+      })(i + 1, text[i]);
+    }
+  }, delay);
+}
+
+
 $(function() {
   // wait for document ready
   console.log('! ! ! Document ready ! ! !');
   console.log('- - - W E L C O M - - -');
+  // Animation Hello World typing
+  autoType(".type-js", 115, 500);
   // Write Numbers inside first <aside> element
   writeAsideNumbers(heightCalcule());
   // Initiate MagicScroll controller
