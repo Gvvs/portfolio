@@ -24,7 +24,7 @@ $(function() {
   console.log('! ! ! Document ready ! ! !');
   console.log('- - - W E L C O M - - -');
   // Animation Hello World typing
-  autoType(".type-js", 115, 500);
+  autoType(".type-js", 115, 700);
   // Write Numbers inside first <aside> element
   writeAsideNumbers(heightCalcule());
   // Initiate MagicScroll controller
