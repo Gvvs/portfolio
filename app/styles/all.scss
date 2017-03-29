@@ -1,4 +1,7 @@
 // Main SCSS file.
+*::selection {
+  background: rgba(255, 75, 39, 0.7);
+}
 
 body {
   width: 100vw;

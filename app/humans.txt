@@ -9,8 +9,9 @@ Job: UX/UI Designer
 From:Paris, France, HETIC
 
 /* SITE */
-Last update:2017/03/27
+Last update:2017/03/30
 Language: English
 Doctype:HTML5
 IDE: Atom
 Technologie: HTML5, CSS3, JavaScript
+Vendors: JQuery, TweenMax, MagicScroll

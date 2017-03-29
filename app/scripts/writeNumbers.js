@@ -25,10 +25,5 @@ function writeAsideNumbers(e) {
 
 // EventListeners
 $(window).resize(function() {
-  console.log('window resized');
   writeAsideNumbers(heightCalcule());
-  console.log('Aside Number rewrited');
-  console.log($("#triggerAmp").height());
-  console.log($('#triggerAmp').offset().top);
-  console.log($('#triggerAqua').offset().top)
 });

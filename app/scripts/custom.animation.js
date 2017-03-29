@@ -21,8 +21,8 @@ function autoType(elementClass, typingSpeed, delay) {
 
 $(function() {
   // wait for document ready
-  console.log('! ! ! Document ready ! ! !');
-  console.log('- - - W E L C O M E - - -');
+  console.log('%c! ! ! Document ready ! ! !','color: white;background-color: black;');
+  console.log('%c- - - W E L C O M E - - -','color: white;background-color: black;');
   // Animation Hello World typing
   autoType(".typing-hello", 115, 700);
   // Write Numbers inside first <aside> element
@@ -31,9 +31,10 @@ $(function() {
   var controller = new ScrollMagic.Controller();
   // Smooth Scroll
   controller.scrollTo(function(newpos) {
+      var halfScreen = ($(window).height())/2;
     TweenMax.to(window, 1, {
       scrollTo: {
-        y: newpos
+        y: newpos - halfScreen + 70
       }
     });
   });
