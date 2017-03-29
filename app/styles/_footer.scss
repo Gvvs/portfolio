@@ -5,6 +5,7 @@ footer#email-credits {
   width: 100vw;
   background-color: $colorGreen;
   color: white;
+  z-index: 3;
 
   section#email {
     position: absolute;

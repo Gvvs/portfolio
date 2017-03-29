@@ -12,9 +12,14 @@ function heightCalcule() {
 
 function writeAsideNumbers(e) {
   asideNumber.empty();
-  let numberOfSpan = Math.round(((e) / heightNumber) + 1);
+  let numberOfSpan = Math.round(((e) / heightNumber) + 2);
   for (var i = 1; i < numberOfSpan; i++) {
-    asideNumber.append('<span>' + i + '</span>');
+    if (i == 3 || i == 37 || i == 71 || i == 105) {
+      asideNumber.append('<span class="green">' + i + '</span>');
+    }
+    else {
+      asideNumber.append('<span>' + i + '</span>');
+    }
   }
 }
 
@@ -24,4 +29,6 @@ $(window).resize(function() {
   writeAsideNumbers(heightCalcule());
   console.log('Aside Number rewrited');
   console.log($("#triggerAmp").height());
+  console.log($('#triggerAmp').offset().top);
+  console.log($('#triggerAqua').offset().top)
 });

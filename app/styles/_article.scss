@@ -7,7 +7,8 @@ article {
   padding-left: $pad-marg-left;
   width: 100vw;
   height: auto;
-  margin: 0 0 262px;
+  margin: 0 0 251px;
+  z-index: 1;
 
   header {
     h2 {
@@ -29,11 +30,12 @@ article {
       content: '';
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
       left: -37px;
       width: 24px;
       height: 2px;
-      background-color: rgba(25, 154, 143, 0.76);
+      transform: translateY(-50%);
+      opacity: 0.76;
+      background-color: $colorGreen;
     }
 
     h3 {
@@ -42,11 +44,11 @@ article {
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
-      line-height: normal;
+      line-height: 1;
       letter-spacing: -0.8px;
       color: $wordingGrey;
       opacity: 0.67;
-      margin: 0 0 2px;
+      margin: 0 0 6px;
       padding-left: 3px;
       text-transform: uppercase;
     }
