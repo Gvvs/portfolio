@@ -8,20 +8,24 @@
     opacity: 0;
   }
 }
-@keyframes blinky {
-    0% {
-        opacity: 1;
-    }
-    49% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
+@keyframes appear {
+  0% {
+    background-color: $backgroundLastArticle;
+    opacity: 0;
+    top: -20px;
+  }
+
+  45% {
+    top: 0;
+  }
+
+  100% {
+    background-color: white;
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+    to {
+        height: 0;
     }
 }

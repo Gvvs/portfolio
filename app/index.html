@@ -188,7 +188,7 @@
       </ul>
     </section>
     <section id="content">
-        <h3 class="typing-hello hidden">Hello World</h3>
+      <h3 class="typing-hello hidden">Hello World</h3>
       <h1>I’m <strong>Allan Dollé</strong>, a Web developer &amp; SEO consultant<br>Looking for a 6 month internship from july to december.</h1>
       <div class="wrapper">
         <a href="#triggerInitScale" title="Take me to the projects">Do you want to see my projects ?</a>
@@ -205,7 +205,7 @@
   <main role="main">
     <article id="triggerAmp">
       <header>
-        <h3>Amp Fender Tweed</h3>
+        <h3>Fender Tweed Amp</h3>
         <h2>Princetone 5F2A</h2>
       </header>
       <section>
@@ -252,16 +252,37 @@
         <a href="https://lesalienes.com" title="Les Aliénés - Short Film HETIC Project" target="_blank" data-track="Discover" data-label="Les Alienes" data-value="Home"><span>Discover project</span></a>
       </footer>
     </article>
-    <article id="about">
-        <header>
-            <h2>About myself</h2>
-            <h3>Write something on two lines just to tell how awesome your are my dear Allan…</h3>
-        </header>
-        <section>
-            <p class="typing-about">I wrote my first code in VisualBasic Scripts after learned it in middle school at 13 years old. After High school, i started to learn medicine for 8 years. I passed my first year competition successfully and i was able to finished <strong>55th out of 1040 candidates</strong>.</p>
-            <p>I worked at the hospital as a <strong>medical extern for 3 years</strong>, but my addiction for coding and making things was not compatible with.</p>
-        </section>
+    <article id="triggerAboutAll">
+      <header>
+        <h2 id="triggerAbout" class="typing-about hidden">About myself</h2>
+      </header>
+      <section>
+        <h3 id="triggerAboutStudies" class="typing-studies hidden">My studies</h3>
+        <div class="wrapper">
+          <p>I wrote my first code in VisualBasic Scripts after learned it in middle school at 13 years old. After High school, i started to learn medicine for 8 years. I passed my first year competition successfully and i was able to finished <strong>55th out of 1040 candidates</strong>.</p>
+          <p>I worked at the hospital as a <strong>medical extern for 3 years</strong>, but my addiction for coding and making things was not compatible with.</p>
+          <p>I decided to stop my medical studies to learn more about coding, computing, and technologies at <a href="https://www.hetic.net" title="HETIC - école des métiers du web" target="_blank">HETIC</a>. I entered directly in the 4th year of the HETIC
+            great school, where I polish my knowledge about the world wide web.</p>
+        </div>
+      </section>
+      <section>
+        <h3 id="triggerAboutDo" class="typing-do hidden">What i do</h3>
+        <div class="wrapper">
+          <p>I am a <strong>freelancer</strong> and work for some people and communications agency. Added to my coding knowledge, i have 2 years of SEO practice and web analytics which is an asset for my clients. I am also attracted by connected objects
+            maked with <strong>Arduino and Raspberry PI</strong>.</p>
+          <div class="overlay"></div>
+        </div>
+      </section>
+      <section>
+        <h3 id="triggerAboutLove" class="typing-love hidden">What i love</h3>
+        <div class="wrapper">
+          <p>I love to learn, to improve myself, to build things, to play some blues guitar riffs, to run under the storm, to talk about the universe, to read scientific articles and so on.</p>
+          <div class="overlay"></div>
+        </div>
+      </section>
     </article>
+    <aside id="dev">
+    </aside>
   </main>
   <footer id="email-credits" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
     <div id="triggerFinishScale"></div>
@@ -278,8 +299,6 @@
       <p>-Illustration &amp; Design credits : <a href="https://www.linkedin.com/in/aymeric-sans-37a4527a/" title="Aymeric Sans's LinkedIn profile" target="_blank" data-track="Credit" data-label="Aymeric Sans" data-value="Footer">Aymeric Sans</a></p>
     </section>
   </footer>
-  <aside id="dev">
-  </aside>
 
 
   <!-- BEGIN Scripts -->
@@ -288,6 +307,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+  <script type="text/javascript" src="scripts/debug.addIndicators.js"></script>
   <script type="text/javascript" src="scripts/writeNumbers.js"></script>
   <script type="text/javascript" src="scripts/custom.animation.js"></script>
   <script type="text/javascript" src="scripts/tracking.js"></script>

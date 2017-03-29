@@ -7,7 +7,6 @@ function autoType(elementClass, typingSpeed, delay) {
   setTimeout(function() {
     selector.text("");
     selector.removeClass("hidden");
-    selector.removeClass("display-none");
     for (var i = 0; i < amntOfChars; i++) {
       (function(i, char) {
         setTimeout(function() {
@@ -23,10 +22,9 @@ function autoType(elementClass, typingSpeed, delay) {
 $(function() {
   // wait for document ready
   console.log('! ! ! Document ready ! ! !');
-  console.log('- - - W E L C O M - - -');
+  console.log('- - - W E L C O M E - - -');
   // Animation Hello World typing
   autoType(".typing-hello", 115, 700);
-  // autoType(".typing-about", 15, 2000);
   // Write Numbers inside first <aside> element
   writeAsideNumbers(heightCalcule());
   // Initiate MagicScroll controller
@@ -62,11 +60,13 @@ $(function() {
     "My first electronic project…",
     "Don't be afraid little fish !",
     "She has too many patients now…",
-    "We called me MacGiver…"
+    "We called me MacGiver…",
+    "Learn more about me…"
   ];
 
   function eraseQuote() {
-    return quote.text("");
+    quote.text("");
+    quote.css("display", "none");
   }
   // build tween
   var tweenInitScale = TweenMax.to("#logo", 2, {
@@ -79,7 +79,6 @@ $(function() {
       logo.attr("src", images[2]); // set the image source
       if (quote.text() != "") {
         eraseQuote();
-        quote.css("display", "none");
       }
     }
   });
@@ -93,7 +92,6 @@ $(function() {
       logo.attr("src", images[1]); // set the image source
       if (quote.text() != "") {
         eraseQuote();
-        quote.css("display", "none");
       }
     }
   });
@@ -133,6 +131,55 @@ $(function() {
       }
     }
   });
+  var tweenAboutAll = TweenMax.to("#me", 0.5, {
+    onUpdate: function() {
+      logo.attr("src", images[2]); // set the image source
+      if (quote.text() != "") {
+        eraseQuote();
+      }
+    }
+  });
+  var tweenAbout = TweenMax.to("#me", 0.5, {
+    onStart: function() {
+      if ($(".typing-about").hasClass("hidden")) {
+        autoType(".typing-about", 20, 100);
+      }
+    }
+  });
+  var tweenAboutStudies = TweenMax.to("#me", 0.5, {
+    onStart: function() {
+      if ($(".typing-studies").hasClass("hidden")) {
+        autoType(".typing-studies", 20, 100);
+        setTimeout(function() {
+          $("#triggerAboutStudies").next().addClass("animate");
+          $("#triggerAboutStudies").next().find(".overlay").addClass("disappear");
+        }, 400);
+      }
+    }
+  });
+  var tweenAboutDo = TweenMax.to("#me", 0.5, {
+    onStart: function() {
+      if ($(".typing-do").hasClass("hidden")) {
+        autoType(".typing-do", 20, 100);
+        setTimeout(function() {
+          $("#triggerAboutDo").next().addClass("animate");
+          $("#triggerAboutDo").next().find(".overlay").addClass("disappear");
+        }, 400);
+      }
+    }
+  });
+  var tweenAboutLove = TweenMax.to("#me", 0.5, {
+    onStart: function() {
+      if ($(".typing-love").hasClass("hidden")) {
+        autoType(".typing-love", 20, 100);
+        setTimeout(function() {
+          $("#triggerAboutLove").next().addClass("animate");
+          $("#triggerAboutLove").next().find(".overlay").addClass("disappear");
+        }, 400);
+      }
+    }
+  });
+
 
   // build MagicScroll scenes
   var initSceneScale = new ScrollMagic.Scene({
@@ -140,36 +187,99 @@ $(function() {
       duration: 220
     })
     .setTween(tweenInitScale)
+    // .addIndicators({
+    //   name: "1 (duration: 220)"
+    // })
     .addTo(controller);
   var finishSceneScale = new ScrollMagic.Scene({
       triggerElement: "#triggerFinishScale",
       duration: 190
     })
     .setTween(tweenFinishScale)
+    // .addIndicators({
+    //   name: "2 (duration: 190)"
+    // })
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAmp",
-      duration: 400
+      duration: 500
     })
     .setTween(tweenAmp)
+    // .addIndicators({
+    //   name: "3 (duration: 500)"
+    // })
     .addTo(controller);
-  var ampScene = new ScrollMagic.Scene({
+  var aquaScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAqua",
-      duration: 400
+      duration: 500
     })
     .setTween(tweenAqua)
+    // .addIndicators({
+    //   name: "4 (duration: 500)"
+    // })
     .addTo(controller);
-  var ampScene = new ScrollMagic.Scene({
+  var psyScene = new ScrollMagic.Scene({
       triggerElement: "#triggerPsy",
-      duration: 400
+      duration: 500
     })
     .setTween(tweenPsy)
+    // .addIndicators({
+    //   name: "5 (duration: 500)"
+    // })
     .addTo(controller);
-  var ampScene = new ScrollMagic.Scene({
+  var filmScene = new ScrollMagic.Scene({
       triggerElement: "#triggerFilm",
-      duration: 400
+      duration: 500
     })
     .setTween(tweenFilm)
+    // .addIndicators({
+    //   name: "6 (duration: 500)"
+    // })
+    .addTo(controller);
+  var aboutAllScene = new ScrollMagic.Scene({
+      triggerElement: "#triggerAboutAll",
+      duration: 900
+    })
+    .setTween(tweenAboutAll)
+    // .addIndicators({
+    //   name: "7 (duration: 900)"
+    // })
+    .addTo(controller);
+  var aboutScene = new ScrollMagic.Scene({
+      triggerElement: "#triggerAbout",
+      duration: 0
+    })
+    .setTween(tweenAbout)
+    // .addIndicators({
+    //   name: "8-1 (duration: 0)"
+    // })
+    .addTo(controller);
+  var aboutStudiesScene = new ScrollMagic.Scene({
+      triggerElement: "#triggerAboutStudies",
+      duration: 0
+    })
+    .setTween(tweenAboutStudies)
+    // .addIndicators({
+    //   name: "8-2 (duration: 0)"
+    // })
+    .addTo(controller);
+  var aboutStudiesScene = new ScrollMagic.Scene({
+      triggerElement: "#triggerAboutDo",
+      duration: 0
+    })
+    .setTween(tweenAboutDo)
+    // .addIndicators({
+    //   name: "8-3 (duration: 0)"
+    // })
+    .addTo(controller);
+  var aboutStudiesScene = new ScrollMagic.Scene({
+      triggerElement: "#triggerAboutLove",
+      duration: 0
+    })
+    .setTween(tweenAboutLove)
+    // .addIndicators({
+    //   name: "8-4 (duration: 0)"
+    // })
     .addTo(controller);
 
   $("#email .wrapper").mouseover(function() {

@@ -6,22 +6,17 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
-.hidden {
-  opacity: 0;
-}
-
-.display-none {
-  display: none;
-}
 // All the import scss files
 @import 'variables';
 @import 'mixins';
 @import 'fonts';
 @import 'header';
-@import 'aside';
+@import 'main';
 @import 'article';
-@import 'footer'; // Some media query
+@import 'aside';
+@import 'footer';
+@import 'extra';
+// Some media query
 @media screen and (max-width: 1040px) {
   section#logo-wrapper {
     display: none;
