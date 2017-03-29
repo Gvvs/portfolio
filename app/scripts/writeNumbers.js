@@ -12,7 +12,7 @@ function heightCalcule() {
 
 function writeAsideNumbers(e) {
   asideNumber.empty();
-  let numberOfSpan = Math.round(((e) / heightNumber) + 2);
+  let numberOfSpan = Math.round(e / heightNumber);
   for (var i = 1; i < numberOfSpan; i++) {
     if (i == 3 || i == 37 || i == 71 || i == 105) {
       asideNumber.append('<span class="green">' + i + '</span>');

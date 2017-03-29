@@ -3,7 +3,7 @@ aside {
     position: absolute;
     top: 6px;
     left: 0;
-    width: 80px;
+    width: $aside-width;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
