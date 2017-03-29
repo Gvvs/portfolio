@@ -152,7 +152,7 @@ $(function() {
         autoType(".typing-studies", 20, 100);
         setTimeout(function() {
           $("#triggerAboutStudies").next().addClass("animate");
-          $("#triggerAboutStudies").next().find(".overlay").addClass("disappear");
+          studiesVisible = true
         }, 400);
       }
     }
@@ -163,7 +163,6 @@ $(function() {
         autoType(".typing-do", 20, 100);
         setTimeout(function() {
           $("#triggerAboutDo").next().addClass("animate");
-          $("#triggerAboutDo").next().find(".overlay").addClass("disappear");
         }, 400);
       }
     }
@@ -174,7 +173,6 @@ $(function() {
         autoType(".typing-love", 20, 100);
         setTimeout(function() {
           $("#triggerAboutLove").next().addClass("animate");
-          $("#triggerAboutLove").next().find(".overlay").addClass("disappear");
         }, 400);
       }
     }
