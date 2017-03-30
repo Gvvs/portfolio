@@ -74,7 +74,7 @@ $(function() {
     css: {
       scaleX: 0.53,
       scaleY: 0.53,
-      x: "80px"
+      x: "110px"
     },
     ease: Linear.easeNone,
     onUpdate: function() {
@@ -88,7 +88,7 @@ $(function() {
     css: {
       scaleX: 1,
       scaleY: 1,
-      x: "-80px"
+      x: "-20px"
     },
     ease: Linear.easeNone,
     onUpdate: function() {
