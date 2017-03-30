@@ -4,7 +4,13 @@
   <url>
     <loc>https://allandolle.fr/</loc>
     <changefreq>monthly</changefreq>
-    <lastmod>2017-03-30</lastmod>
+    <lastmod>2017-03-31</lastmod>
     <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://allandolle.fr/cv-allan-dolle-seo-developpeur.pdf</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-03-30</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
