@@ -1,5 +1,5 @@
 // Scss file for the first <aside> in the document
-aside {
+aside#dev {
     position: absolute;
     top: 6px;
     left: 0;
@@ -13,13 +13,35 @@ aside {
     span {
         font-family: monospace;
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 1.25;
         letter-spacing: normal;
         font-style: normal;
         font-stretch: normal;
-        color: #545454;
-        opacity: 0.40;
+        color: $aside-color;
+        opacity: 0.30;
         transition: all 0.2s ease-out;
+    }
+}
+aside#nav {
+    position: fixed;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    z-index: 800;
+
+    a {
+        display: block;
+        width: 11px;
+        height: 11px;
+        border: 1px $colorGreen solid;
+        border-radius: 50%;
+        margin: 0 0 15px 0;
+        transition: all 0.3s ease-in;
+    }
+    a:hover {
+        background-color: $colorGreen;
+        transform: scale(1.3);
     }
 }

@@ -154,7 +154,7 @@ header#banner {
     background-color: transparent;
     position: fixed;
     top: 40%;
-    right: 80px;
+    right: 60px;
     transform: translateY(-26%);
     z-index: 1001;
 
@@ -205,5 +205,9 @@ header#banner {
         object-fit: contain;
       }
     }
+  }
+  #triggerInitScale {
+    position: absolute;
+    top: 51%;
   }
 }

@@ -21,8 +21,8 @@ function autoType(elementClass, typingSpeed, delay) {
 
 $(function() {
   // wait for document ready
-  console.log('%c! ! ! Document ready ! ! !','color: white;background-color: black;');
-  console.log('%c- - - W E L C O M E - - -','color: white;background-color: black;');
+  console.log('%c! ! ! Document ready ! ! !', 'color: white;background-color: black;');
+  console.log('%c- - - W E L C O M E - - -', 'color: white;background-color: black;');
   // Animation Hello World typing
   autoType(".typing-hello", 115, 700);
   // Write Numbers inside first <aside> element
@@ -31,10 +31,10 @@ $(function() {
   var controller = new ScrollMagic.Controller();
   // Smooth Scroll
   controller.scrollTo(function(newpos) {
-      var halfScreen = ($(window).height())/2;
+    var halfScreen = ($(window).height()) / 2;
     TweenMax.to(window, 1, {
       scrollTo: {
-        y: newpos - halfScreen + 70
+        y: newpos - halfScreen + 100
       }
     });
   });
@@ -73,7 +73,8 @@ $(function() {
   var tweenInitScale = TweenMax.to("#logo", 2, {
     css: {
       scaleX: 0.53,
-      scaleY: 0.53
+      scaleY: 0.53,
+      x: "80px"
     },
     ease: Linear.easeNone,
     onUpdate: function() {
@@ -87,6 +88,7 @@ $(function() {
     css: {
       scaleX: 1,
       scaleY: 1,
+      x: "-80px"
     },
     ease: Linear.easeNone,
     onUpdate: function() {
@@ -201,7 +203,8 @@ $(function() {
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAmp",
-      duration: 500
+      duration: 510,
+      offset: -50
     })
     .setTween(tweenAmp)
     // .addIndicators({
@@ -210,7 +213,8 @@ $(function() {
     .addTo(controller);
   var aquaScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAqua",
-      duration: 500
+      duration: 510,
+      offset: -50
     })
     .setTween(tweenAqua)
     // .addIndicators({
@@ -219,7 +223,8 @@ $(function() {
     .addTo(controller);
   var psyScene = new ScrollMagic.Scene({
       triggerElement: "#triggerPsy",
-      duration: 500
+      duration: 510,
+      offset: -50
     })
     .setTween(tweenPsy)
     // .addIndicators({
@@ -228,7 +233,8 @@ $(function() {
     .addTo(controller);
   var filmScene = new ScrollMagic.Scene({
       triggerElement: "#triggerFilm",
-      duration: 500
+      duration: 510,
+      offset: -50
     })
     .setTween(tweenFilm)
     // .addIndicators({
@@ -237,7 +243,8 @@ $(function() {
     .addTo(controller);
   var aboutAllScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAboutAll",
-      duration: 900
+      duration: 950,
+      offset: -50
     })
     .setTween(tweenAboutAll)
     // .addIndicators({
@@ -246,7 +253,8 @@ $(function() {
     .addTo(controller);
   var aboutScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAbout",
-      duration: 0
+      duration: 0,
+      offset: -70
     })
     .setTween(tweenAbout)
     // .addIndicators({
@@ -262,7 +270,7 @@ $(function() {
     //   name: "8-2 (duration: 0)"
     // })
     .addTo(controller);
-  var aboutStudiesScene = new ScrollMagic.Scene({
+  var aboutDoScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAboutDo",
       duration: 0
     })
@@ -271,7 +279,7 @@ $(function() {
     //   name: "8-3 (duration: 0)"
     // })
     .addTo(controller);
-  var aboutStudiesScene = new ScrollMagic.Scene({
+  var aboutLoveScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAboutLove",
       duration: 0
     })

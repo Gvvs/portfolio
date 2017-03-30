@@ -23,7 +23,7 @@ function writeAsideNumbers(e) {
   }
 }
 
-// EventListeners
+// Window OnResize EventListeners
 $(window).resize(function() {
   writeAsideNumbers(heightCalcule());
 });
