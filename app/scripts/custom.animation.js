@@ -203,7 +203,7 @@ $(function() {
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAmp",
-      duration: 510,
+      duration: 610,
       offset: -50
     })
     .setTween(tweenAmp)
@@ -213,7 +213,7 @@ $(function() {
     .addTo(controller);
   var aquaScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAqua",
-      duration: 510,
+      duration: 610,
       offset: -50
     })
     .setTween(tweenAqua)
@@ -223,7 +223,7 @@ $(function() {
     .addTo(controller);
   var psyScene = new ScrollMagic.Scene({
       triggerElement: "#triggerPsy",
-      duration: 510,
+      duration: 610,
       offset: -50
     })
     .setTween(tweenPsy)
@@ -233,7 +233,7 @@ $(function() {
     .addTo(controller);
   var filmScene = new ScrollMagic.Scene({
       triggerElement: "#triggerFilm",
-      duration: 510,
+      duration: 610,
       offset: -50
     })
     .setTween(tweenFilm)

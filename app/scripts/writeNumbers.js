@@ -14,7 +14,7 @@ function writeAsideNumbers(e) {
   asideNumber.empty();
   let numberOfSpan = Math.round(e / heightNumber);
   for (var i = 1; i < numberOfSpan; i++) {
-    if (i == 3 || i == 37 || i == 71 || i == 105) {
+    if (i == 3 || i == 44 || i == 85 || i == 126) {
       asideNumber.append('<span class="green">' + i + '</span>');
     }
     else {
