@@ -185,7 +185,7 @@ $(function() {
   // build MagicScroll scenes
   var initSceneScale = new ScrollMagic.Scene({
       triggerElement: "#triggerInitScale",
-      duration: 220
+      duration: $(window).height()/2
     })
     .setTween(tweenInitScale)
     // .addIndicators({
