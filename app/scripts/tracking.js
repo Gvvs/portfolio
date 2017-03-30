@@ -28,6 +28,7 @@ class Track {
 }
 
 // Instances of Track class
+var takeMeTo = new Track($("a[data-track='TakeMeTo']"));
 var social = new Track($("a[data-track='Social']"));
 var discover = new Track($("a[data-track='Discover']"));
 var credits = new Track($("a[data-track='Credit']"));
