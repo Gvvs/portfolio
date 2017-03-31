@@ -155,9 +155,9 @@ header#banner {
   section#logo-wrapper {
     background-color: transparent;
     position: fixed;
-    top: calc(100vh - #{$border-bottom-geometric});
+    top: 50vh;
     right: 80px;
-    transform: translateY(-26%);
+    transform: translateY(-50%);
     z-index: 1001;
 
     h4#quote {
