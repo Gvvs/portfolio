@@ -5,7 +5,7 @@ article {
   left: 0;
   top: 0;
   padding-left: $pad-marg-left;
-  width: 100vw;
+  width: 90vw;
   height: 615px;
   margin: 0;
   z-index: 1;
@@ -66,7 +66,8 @@ article {
       color: $wordingGrey;
       padding-left: 3px;
       margin: 0 0 32px;
-      width: 550px;
+      width: 90%;
+      max-width: 550px;
 
       a {
         opacity: 0.74;
@@ -134,8 +135,10 @@ article {
 article#triggerAboutAll {
   left: 0;
   top: 0;
+  height: auto;
   padding: 45px 0 150px $pad-marg-left;
   margin: 0;
+  width: 100vw;
   background-color: $backgroundLastArticle;
 
   header {
@@ -162,6 +165,7 @@ article#triggerAboutAll {
   }
 
   section {
+    width: 80%;
     max-width: 820px;
     margin: 0 0 40px -8px;
 
@@ -198,6 +202,7 @@ article#triggerAboutAll {
         color: $wordingGrey;
         opacity: 0.87;
         width: auto;
+        max-width: none;
         margin: 0 0 20px;
       }
 

@@ -22,18 +22,81 @@ body {
 @import 'footer';
 @import 'extra'; // Some media query
 @media screen and (max-width: 1130px) {
+  header#banner {
+    section#link {
+      div.home {
+        h2 {
+          float: none;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+
+        li {
+          margin: 30px;
+        }
+      }
+    }
+
+    div#geometric {
+      border: none;
+      width: 100vw;
+      height: 90vh;
+      background-color: $colorGreen;
+    }
+
+    section#content {
+      left: 50px;
+
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  main {
+    article {
+      padding-left: 40px;
+
+      header {
+        h2 {
+          font-size: 28px;
+          line-height: 48px;
+        }
+
+        h2::before {
+          left: -15px;
+          width: 12px;
+        }
+      }
+    }
+
+    article:nth-of-type(1) {
+      margin-top: 100px;
+    }
+
+    article#triggerAboutAll {
+      padding-left: 50px;
+      padding-bottom: 20px;
+    }
+
+    aside#dev {
+      width: 20px;
+    }
+  }
+  footer#email-credits {
+      section#email {
+          left: 50px;
+      }
+  }
+}
+@media screen and (max-width: 1035px) {
   section#logo-wrapper {
     display: none;
-  }
-
-  div#geometric {
-    border: none;
-    width: 100vw;
-    height: 80vh;
-    background-color: $colorGreen;
-  }
-
-  article:nth-of-type(1) {
-    margin-top: 100px;
   }
 }
