@@ -77,6 +77,39 @@ body {
   footer#email-credits {
     section#email {
       left: 50px;
+
+      h2 {
+          font-size: 34px;
+      }
+
+      p {
+          font-size: 18px;
+      }
+
+      div.wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 150px;
+
+        a {
+          display: block;
+          margin: 0 0 10px;
+          border-radius: 50%;
+          float: none;
+          transition: all 0.24s ease-out;
+        }
+
+        a:nth-of-type(2) {
+          margin: 0 0 30px;
+        }
+
+        a:nth-of-type(3),
+        a:nth-of-type(4) {
+          margin: 0 0 20px;
+        }
+      }
     }
   }
 }
@@ -84,24 +117,28 @@ body {
   header#banner {
     section#link {
       div.home {
-        display: none;
+        text-align: center;
+        margin: auto;
       }
 
       ul {
         display: flex;
-        justify-content: center;
-        align-items: right;
-        text-align: center;
-        margin: auto;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+        margin: 0;
 
         li {
-          margin: 30px;
+          margin: 0 10px 10px 0;
+          display: block;
         }
+
         span.text-social {
-            display: none;
+          display: none;
         }
+
         a {
-            width: 33px;
+          width: 33px;
         }
       }
     }

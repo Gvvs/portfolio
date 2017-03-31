@@ -1,4 +1,5 @@
 // Scss file for the first <footer> in the document
+
 footer#email-credits {
   position: relative;
   height: 80vh;
@@ -58,7 +59,8 @@ footer#email-credits {
         margin-right: 36px;
       }
 
-      a:nth-of-type(3), a:nth-of-type(4) {
+      a:nth-of-type(3),
+      a:nth-of-type(4) {
         margin: 0 20px;
         text-decoration: none;
         display: inline-block;
@@ -79,13 +81,15 @@ footer#email-credits {
         transition: none;
       }
 
-      a:nth-of-type(3)::after, a:nth-of-type(4)::after {
+      a:nth-of-type(3)::after,
+      a:nth-of-type(4)::after {
         content: '_';
         padding-left: 3px;
         animation: blink 1s infinite alternate ease-in-out;
       }
 
-      a:nth-of-type(3):hover, a:nth-of-type(4):hover {
+      a:nth-of-type(3):hover,
+      a:nth-of-type(4):hover {
         transform: none;
         box-shadow: none;
       }
