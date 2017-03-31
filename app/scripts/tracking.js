@@ -34,3 +34,4 @@ var social = new Track($("a[data-track='Social']"));
 var discover = new Track($("a[data-track='Discover']"));
 var credits = new Track($("a[data-track='Credit']"));
 var email = new Track($("a[data-track='Email']"));
+var externalLink = new Track($("a[data-track='External link']"));
