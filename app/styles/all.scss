@@ -24,4 +24,10 @@ body {
   section#logo-wrapper {
     display: none;
   }
+  div#geometric {
+      border: none;
+      width: 100vw;
+      height: 80vh;
+      background-color: $colorGreen;
+  }
 }
