@@ -1,13 +1,13 @@
 // Constantes
 const asideNumber = $('#dev');
-const main = $('main');
+const projects = $('section#projects');
 
 // Variables
 var heightNumber = 10 * 1.5;
 
 // Functions
 function heightCalcule() {
-  return main.height();
+  return projects.height();
 }
 
 function writeAsideNumbers(e) {
