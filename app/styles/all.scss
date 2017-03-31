@@ -1,6 +1,9 @@
 // Main SCSS file.
+@import 'variables';
+
 *::selection {
-  background: rgba(255, 75, 39, 0.7);
+  background-color: $colorGreen;
+  color: white;
 }
 
 body {
@@ -10,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 // All the import scss files
-@import 'variables';
 @import 'mixins';
 @import 'fonts';
 @import 'header';
@@ -18,19 +20,20 @@ body {
 @import 'article';
 @import 'aside';
 @import 'footer';
-@import 'extra';
-// Some media query
+@import 'extra'; // Some media query
 @media screen and (max-width: 1130px) {
   section#logo-wrapper {
     display: none;
   }
+
   div#geometric {
-      border: none;
-      width: 100vw;
-      height: 80vh;
-      background-color: $colorGreen;
+    border: none;
+    width: 100vw;
+    height: 80vh;
+    background-color: $colorGreen;
   }
+
   article:nth-of-type(1) {
-      margin-top: 100px;
+    margin-top: 100px;
   }
 }
