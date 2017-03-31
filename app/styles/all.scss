@@ -36,6 +36,10 @@ body {
       h1 {
         font-size: 18px;
       }
+
+      a {
+        font-size: 11px;
+      }
     }
   }
 
@@ -80,20 +84,24 @@ body {
   header#banner {
     section#link {
       div.home {
-        h2 {
-          float: none;
-        }
+        display: none;
       }
 
       ul {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: right;
         text-align: center;
         margin: auto;
 
         li {
           margin: 30px;
+        }
+        span.text-social {
+            display: none;
+        }
+        a {
+            width: 33px;
         }
       }
     }
