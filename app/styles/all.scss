@@ -23,26 +23,6 @@ body {
 @import 'extra'; // Some media query
 @media screen and (max-width: 1130px) {
   header#banner {
-    section#link {
-      div.home {
-        h2 {
-          float: none;
-        }
-      }
-
-      ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: auto;
-
-        li {
-          margin: 30px;
-        }
-      }
-    }
-
     div#geometric {
       border: none;
       width: 100vw;
@@ -89,14 +69,37 @@ body {
       width: 20px;
     }
   }
+
   footer#email-credits {
-      section#email {
-          left: 50px;
-      }
+    section#email {
+      left: 50px;
+    }
   }
 }
 @media screen and (max-width: 1035px) {
-  section#logo-wrapper {
-    display: none;
+  header#banner {
+    section#link {
+      div.home {
+        h2 {
+          float: none;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+
+        li {
+          margin: 30px;
+        }
+      }
+    }
+
+    section#logo-wrapper {
+      display: none;
+    }
   }
 }
