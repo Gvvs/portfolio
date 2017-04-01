@@ -13,7 +13,7 @@ main#project-main {
     div {
       max-width: 410px;
       margin-bottom: 250px;
-      color: rgb(18, 17, 46);
+      color: $wordingGrey;
 
       h2 {
         position: relative;
@@ -38,7 +38,7 @@ main#project-main {
         height: 1px;
         transform: translateY(-50%);
         opacity: 0.76;
-        background-color: rgb(25, 154, 143);
+        background-color: $colorGreen;
       }
 
       p {
