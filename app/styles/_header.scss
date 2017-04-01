@@ -114,9 +114,10 @@ header#banner {
       font-weight: 300;
       font-style: normal;
       font-stretch: normal;
-      line-height: normal;
+      line-height: 1;
       letter-spacing: -0.3px;
       color: $aside-color;
+      height: 14px;
     }
   }
 

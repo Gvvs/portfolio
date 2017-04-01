@@ -25,6 +25,7 @@ $(function() {
   console.log('%c- - - W E L C O M E - - -', 'color: white;background-color: black;');
   // Animation Hello World typing
   autoType(".typing-hello", 115, 700);
+  autoType(".typing-date", 100, 700);
   // Write Numbers inside first <aside> element
   writeAsideNumbers(heightCalcule());
   // Initiate MagicScroll controller
