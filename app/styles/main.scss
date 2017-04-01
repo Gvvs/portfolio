@@ -1,4 +1,111 @@
 // Scss file for the first <main> in the document
-main {
+
+main#home-main {
+  position: relative;
+}
+
+main#project-main {
+  margin: 120px 10%;
+
+  section {
     position: relative;
+
+    div {
+      max-width: 410px;
+      margin-bottom: 160px;
+      color: rgb(18, 17, 46);
+
+      h2 {
+        position: relative;
+        opacity: 0.67;
+        font-family: 'Gotham-Light', sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: -0.8px;
+        text-transform: uppercase;
+        margin: 0 0 24px 30px;
+      }
+
+      h2::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        width: 21px;
+        height: 1px;
+        transform: translateY(-50%);
+        opacity: 0.76;
+        background-color: rgb(25, 154, 143);
+      }
+
+      p {
+        opacity: 0.87;
+        font-family: 'Averta-Light', sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        margin: 0 0 24px;
+      }
+    }
+
+    div.right {
+      padding-left: 50%;
+    }
+
+    div.center {
+      max-width: none;
+
+      p {
+        position: relative;
+        opacity: 0.87;
+        font-family: 'Averta-Regular-Italic', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        font-stretch: normal;
+        line-height: 1.8;
+        letter-spacing: normal;
+        text-align: center;
+      }
+
+      img {
+          position: relative;
+          top: 0;
+          left: 50%;
+          transform: translateX(100%);
+      }
+
+      p::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 55%;
+        width: 80px;
+        height: 22px;
+        background-image: url("/images/talk.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+    }
+
+    figure {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: black;
+      width: 300px;
+      height: 300px;
+      margin: 0;
+    }
+
+    figure.right {
+      left: 0;
+    }
+  }
 }
