@@ -12,7 +12,7 @@ main#project-main {
 
     div {
       max-width: 410px;
-      margin-bottom: 160px;
+      margin-bottom: 250px;
       color: rgb(18, 17, 46);
 
       h2 {
@@ -51,6 +51,23 @@ main#project-main {
         line-height: 1.88;
         letter-spacing: normal;
         margin: 0 0 24px;
+
+        a {
+          opacity: 0.74;
+          color: inherit;
+          text-decoration: none;
+          transition: all 0.3s ease-in;
+        }
+
+        a::before {
+          content: '#';
+          position: relative;
+          color: $colorGreen;
+        }
+
+        a:hover {
+          opacity: 1;
+        }
       }
     }
 
@@ -74,10 +91,10 @@ main#project-main {
       }
 
       img {
-          position: relative;
-          top: 0;
-          left: 50%;
-          transform: translateX(100%);
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(100%);
       }
 
       p::after {
