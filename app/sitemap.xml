@@ -8,15 +8,39 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://allandolle.fr/CV-dolle-allan-francais.pdf</loc>
+    <loc>https://allandolle.fr/cv-dolle-allan-francais.pdf</loc>
     <changefreq>monthly</changefreq>
     <lastmod>2017-03-31</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://allandolle.fr/CV-dolle-allan-english.pdf</loc>
+    <loc>https://allandolle.fr/cv-dolle-allan-english.pdf</loc>
     <changefreq>monthly</changefreq>
     <lastmod>2017-03-31</lastmod>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://allandolle.fr/projects/digital-strategy-for-psychologist.html</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-04-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://allandolle.fr/projects/fender-tweed-princetone-5F2A.html</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-04-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://allandolle.fr/projects/short-film-les-alienes.html</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-04-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://allandolle.fr/projects/automated-freshwater-aqua.html</loc>
+    <changefreq>monthly</changefreq>
+    <lastmod>2017-04-11</lastmod>
+    <priority>0.9</priority>
   </url>
 </urlset>
