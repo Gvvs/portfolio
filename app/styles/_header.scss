@@ -88,7 +88,7 @@ header#banner {
 
   section.project-content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
@@ -96,7 +96,6 @@ header#banner {
     text-transform: uppercase;
 
     h1 {
-      opacity: 0.87;
       font-size: 30px;
       font-weight: 600;
       font-style: normal;
@@ -104,11 +103,10 @@ header#banner {
       line-height: 1.63;
       letter-spacing: -0.6px;
       text-align: center;
-      color: $colorGreen;
+      color: white;
     }
 
     h4 {
-      opacity: 0.54;
       font-family: 'Averta-Light', sans-serif;
       font-size: 14px;
       font-weight: 300;
@@ -116,7 +114,7 @@ header#banner {
       font-stretch: normal;
       line-height: 1;
       letter-spacing: -0.3px;
-      color: $aside-color;
+      color: white;
       height: 14px;
     }
   }

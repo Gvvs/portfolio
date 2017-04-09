@@ -9,6 +9,19 @@
     opacity: 1 !important;
     font-weight: 600 !important;
 }
-.background-grey {
-    background-color: $backgroundGrey;
+.background-project {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.psycho-3 {
+    background-image: url(../images/illustration/psycho@3x.png);
+}
+.princetone-3 {
+    background-image: url(../images/illustration/princetone@3x.png);
+}
+.freshwater-3 {
+    background-image: url(../images/illustration/freshwater@3x.png);
+}
+.alienes-3 {
+    background-image: url(../images/illustration/alienes@3x.png);
 }
