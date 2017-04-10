@@ -20,7 +20,7 @@ function autoType(elementClass, typingSpeed, delay) {
 
 
 $(function() {
-  // wait for document ready
+  // Wait for document ready
   console.log('%c! ! ! Document ready ! ! !', 'color: white;background-color: black;');
   console.log('%c- - - W E L C O M E - - -', 'color: white;background-color: black;');
   // Animation Hello World typing
@@ -99,7 +99,7 @@ $(function() {
       }
     }
   });
-  var tweenAmp = TweenMax.to("#me", 0.5, {
+  var tweenAmp = TweenMax.to(logo, 0.5, {
     onUpdate: function() {
       logo.attr("src", images[3]); // set the image source
       if (quote.text() != quoteSentence[0]) {
@@ -108,7 +108,7 @@ $(function() {
       }
     }
   });
-  var tweenAqua = TweenMax.to("#me", 0.5, {
+  var tweenAqua = TweenMax.to(logo, 0.5, {
     onUpdate: function() {
       logo.attr("src", images[0]); // set the image source
       if (quote.text() != quoteSentence[1]) {
@@ -117,7 +117,7 @@ $(function() {
       }
     }
   });
-  var tweenPsy = TweenMax.to("#me", 0.5, {
+  var tweenPsy = TweenMax.to(logo, 0.5, {
     onUpdate: function() {
       logo.attr("src", images[2]); // set the image source
       if (quote.text() != quoteSentence[2]) {
@@ -126,7 +126,7 @@ $(function() {
       }
     }
   });
-  var tweenFilm = TweenMax.to("#me", 0.5, {
+  var tweenFilm = TweenMax.to(logo, 0.5, {
     onUpdate: function() {
       logo.attr("src", images[3]); // set the image source
       if (quote.text() != quoteSentence[3]) {
@@ -135,7 +135,7 @@ $(function() {
       }
     }
   });
-  var tweenAboutAll = TweenMax.to("#me", 0.5, {
+  var tweenAboutAll = TweenMax.to(logo, 0.5, {
     onUpdate: function() {
       logo.attr("src", images[2]); // set the image source
       if (quote.text() != "") {
@@ -143,14 +143,14 @@ $(function() {
       }
     }
   });
-  var tweenAbout = TweenMax.to("#me", 0.5, {
+  var tweenAbout = TweenMax.to(logo, 0.5, {
     onStart: function() {
       if ($(".typing-about").hasClass("hidden")) {
         autoType(".typing-about", 20, 100);
       }
     }
   });
-  var tweenAboutStudies = TweenMax.to("#me", 0.5, {
+  var tweenAboutStudies = TweenMax.to(logo, 0.5, {
     onStart: function() {
       if ($(".typing-studies").hasClass("hidden")) {
         autoType(".typing-studies", 20, 100);
@@ -161,7 +161,7 @@ $(function() {
       }
     }
   });
-  var tweenAboutDo = TweenMax.to("#me", 0.5, {
+  var tweenAboutDo = TweenMax.to(logo, 0.5, {
     onStart: function() {
       if ($(".typing-do").hasClass("hidden")) {
         autoType(".typing-do", 20, 100);
@@ -171,7 +171,7 @@ $(function() {
       }
     }
   });
-  var tweenAboutLove = TweenMax.to("#me", 0.5, {
+  var tweenAboutLove = TweenMax.to(logo, 0.5, {
     onStart: function() {
       if ($(".typing-love").hasClass("hidden")) {
         autoType(".typing-love", 20, 100);
@@ -189,18 +189,12 @@ $(function() {
       duration: $(window).height()/2
     })
     .setTween(tweenInitScale)
-    // .addIndicators({
-    //   name: "1 (duration: 220)"
-    // })
     .addTo(controller);
   var finishSceneScale = new ScrollMagic.Scene({
       triggerElement: "#triggerFinishScale",
       duration: 190
     })
     .setTween(tweenFinishScale)
-    // .addIndicators({
-    //   name: "2 (duration: 190)"
-    // })
     .addTo(controller);
   var ampScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAmp",
@@ -208,9 +202,6 @@ $(function() {
       offset: -50
     })
     .setTween(tweenAmp)
-    // .addIndicators({
-    //   name: "3 (duration: 500)"
-    // })
     .addTo(controller);
   var aquaScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAqua",
@@ -218,9 +209,6 @@ $(function() {
       offset: -50
     })
     .setTween(tweenAqua)
-    // .addIndicators({
-    //   name: "4 (duration: 500)"
-    // })
     .addTo(controller);
   var psyScene = new ScrollMagic.Scene({
       triggerElement: "#triggerPsy",
@@ -228,9 +216,6 @@ $(function() {
       offset: -50
     })
     .setTween(tweenPsy)
-    // .addIndicators({
-    //   name: "5 (duration: 500)"
-    // })
     .addTo(controller);
   var filmScene = new ScrollMagic.Scene({
       triggerElement: "#triggerFilm",
@@ -238,9 +223,6 @@ $(function() {
       offset: -50
     })
     .setTween(tweenFilm)
-    // .addIndicators({
-    //   name: "6 (duration: 500)"
-    // })
     .addTo(controller);
   var aboutAllScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAboutAll",
@@ -248,9 +230,6 @@ $(function() {
       offset: -50
     })
     .setTween(tweenAboutAll)
-    // .addIndicators({
-    //   name: "7 (duration: 900)"
-    // })
     .addTo(controller);
   var aboutScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAbout",
@@ -258,47 +237,35 @@ $(function() {
       offset: -70
     })
     .setTween(tweenAbout)
-    // .addIndicators({
-    //   name: "8-1 (duration: 0)"
-    // })
     .addTo(controller);
   var aboutStudiesScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAboutStudies",
       duration: 0
     })
     .setTween(tweenAboutStudies)
-    // .addIndicators({
-    //   name: "8-2 (duration: 0)"
-    // })
     .addTo(controller);
   var aboutDoScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAboutDo",
       duration: 0
     })
     .setTween(tweenAboutDo)
-    // .addIndicators({
-    //   name: "8-3 (duration: 0)"
-    // })
     .addTo(controller);
   var aboutLoveScene = new ScrollMagic.Scene({
       triggerElement: "#triggerAboutLove",
       duration: 0
     })
     .setTween(tweenAboutLove)
-    // .addIndicators({
-    //   name: "8-4 (duration: 0)"
-    // })
     .addTo(controller);
 
   $("#email .wrapper").mouseover(function() {
-    TweenMax.to("#me", 0.5, {
+    TweenMax.to(logo, 0.5, {
       onUpdate: function() {
         logo.attr("src", images[5]); // set the image source
       }
     })
   });
   $("#email .wrapper").mouseleave(function() {
-    TweenMax.to("#me", 0.5, {
+    TweenMax.to(logo, 0.5, {
       onUpdate: function() {
         logo.attr("src", images[1]); // set the image source
       }
