@@ -1,4 +1,5 @@
 // Scss file for the first <nav> in the document
+
 nav#poject-nav {
   background-color: $backgroundGrey;
   height: 360px;
@@ -39,15 +40,16 @@ nav#poject-nav {
       line-height: 1.04;
       letter-spacing: -0.4px;
       text-transform: uppercase;
-      color: $colorGreen;
       margin: 0 0 0 28px;
       transition: all 0.3s ease-out;
     }
   }
+
   a:hover {
-      h4, h3 {
-          opacity: 1;
-      }
+    h3,
+    h4 {
+      opacity: 1;
+    }
   }
 
   a#next {
@@ -73,5 +75,34 @@ nav#poject-nav {
 
   span.next {
     right: 0;
+  }
+}
+
+nav.alienes {
+  a {
+    h3 {
+      color: $color-alienes;
+    }
+  }
+}
+nav.psycho {
+  a {
+    h3 {
+      color: $color-psycho;
+    }
+  }
+}
+nav.princetone {
+  a {
+    h3 {
+      color: $color-princetone;
+    }
+  }
+}
+nav.freshwater {
+  a {
+    h3 {
+      color: $color-freshwater;
+    }
   }
 }

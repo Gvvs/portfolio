@@ -4,7 +4,6 @@ footer#email-credits {
   position: relative;
   height: 80vh;
   width: 100vw;
-  background-color: $colorGreen;
   color: white;
   z-index: 3;
 
@@ -65,7 +64,6 @@ footer#email-credits {
         text-decoration: none;
         display: inline-block;
         height: 36px;
-        border: 1px solid $colorGreen;
         border-radius: 19px;
         background-color: #ffffff;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
@@ -76,7 +74,6 @@ footer#email-credits {
         font-stretch: normal;
         line-height: 36px;
         letter-spacing: normal;
-        color: $colorGreen;
         padding: 0 24px;
         transition: none;
       }
@@ -109,7 +106,6 @@ footer#email-credits {
     height: $creditsHeight;
     width: 100vw;
     opacity: 0.8;
-    background-color: #228078;
 
     p {
       font-family: 'Averta-Regular-Italic', sans-serif;
@@ -128,6 +124,7 @@ footer#email-credits {
       }
     }
   }
+
   section#logo-wrapper {
     background-color: transparent;
     position: absolute;
@@ -152,5 +149,84 @@ footer#email-credits {
         object-fit: contain;
       }
     }
+  }
+}
+
+footer.index {
+  background-color: $colorGreen;
+
+  section#email {
+    a:nth-of-type(3),
+    a:nth-of-type(4) {
+      border: 1px solid $colorGreen;
+      color: $colorGreen;
+    }
+  }
+
+  section#credits {
+    background-color: #228078;
+  }
+}
+
+footer.alienes {
+  background-color: $background-alienes;
+
+  section#email {
+    a:nth-of-type(3),
+    a:nth-of-type(4) {
+      border: 1px solid $background-alienes;
+      color: $color-alienes;
+    }
+  }
+
+  section#credits {
+    background-color: $background-alienes-2;
+  }
+}
+
+footer.psycho {
+  background-color: $background-psycho;
+
+  section#email {
+    a:nth-of-type(3),
+    a:nth-of-type(4) {
+      border: 1px solid $background-psycho;
+      color: $color-psycho;
+    }
+  }
+
+  section#credits {
+    background-color: $background-psycho-2;
+  }
+}
+
+footer.princetone {
+  background-color: $background-princetone;
+
+  section#email {
+    a:nth-of-type(3),
+    a:nth-of-type(4) {
+      border: 1px solid $background-princetone;
+      color: $color-princetone;
+    }
+  }
+
+  section#credits {
+    background-color: $background-princetone-2;
+  }
+}
+footer.freshwater {
+  background-color: $background-freshwater;
+
+  section#email {
+    a:nth-of-type(3),
+    a:nth-of-type(4) {
+      border: 1px solid $background-freshwater;
+      color: $color-freshwater;
+    }
+  }
+
+  section#credits {
+    background-color: $background-freshwater-2;
   }
 }

@@ -53,7 +53,6 @@ header#banner {
           text-decoration: none;
           display: block;
           height: 32px;
-          //   border: 1px solid $colorGreen;
           border-radius: 16px;
           background-color: white;
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 20px 0 rgba(0, 0, 0, 0.1);
@@ -67,7 +66,21 @@ header#banner {
             font-stretch: normal;
             line-height: 32px;
             letter-spacing: normal;
-            color: $colorGreen;
+          }
+          span.index {
+              color: $colorGreen;
+          }
+          span.alienes {
+              color: $color-alienes;
+          }
+          span.psycho {
+              color: $color-psycho;
+          }
+          span.princetone {
+              color: $color-princetone;
+          }
+          span.freshwater {
+              color: $color-freshwater;
           }
 
           img.logo-social {
