@@ -71,7 +71,7 @@ article {
 
       a {
         opacity: 0.74;
-        color: inherit;
+        color: $colorGreen;
         text-decoration: none;
         transition: all 0.3s ease-in;
       }
@@ -80,7 +80,6 @@ article {
         content: '#';
         position: relative;
         color: $colorGreen;
-        //   animation: float 2.5s infinite alternate ease-in-out;
       }
 
       a:hover {

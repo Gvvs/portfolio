@@ -1,7 +1,27 @@
+function autoType(elementClass, typingSpeed, delay) {
+  var selector = $(elementClass);
+  var text = selector.text().trim().split('');
+  var amntOfChars = text.length;
+  var newString = "";
+  setTimeout(function() {
+    selector.text("");
+    selector.removeClass("hidden");
+    for (var i = 0; i < amntOfChars; i++) {
+      (function(i, char) {
+        setTimeout(function() {
+          newString += char;
+          selector.text(newString);
+        }, i * typingSpeed);
+      })(i + 1, text[i]);
+    }
+  }, delay);
+}
+
 $(function() {
   // Wait for document ready
   console.log('%c! ! ! Document ready ! ! !', 'color: white;background-color: black;');
   console.log('%c- - - W E L C O M E - - -', 'color: white;background-color: black;');
+  autoType(".typing-date", 100, 700);
   // Variables
   var images = [
     "/images/me/allan-exp-1.svg",
