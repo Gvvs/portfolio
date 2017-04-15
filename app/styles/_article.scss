@@ -129,6 +129,23 @@ article {
       animation: blink 0.4s infinite alternate ease-in-out;
     }
   }
+
+  figure {
+      position: relative;
+      top: -64px;
+      left: 30%;
+      transform: translateX(-50%);
+      margin: 0;
+      width: 250px;
+      height: 250px;
+      z-index: -1;
+
+      img {
+          object-fit: contain;
+          width: 250px;
+          height: auto;
+      }
+  }
 }
 
 article#triggerAboutAll {
