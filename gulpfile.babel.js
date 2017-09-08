@@ -57,6 +57,7 @@ gulp.task('images', () =>
 );
 
 // Copy all files at the root level (app)
+// ---
 gulp.task('copy', () =>
   gulp.src([
     'app/*',
