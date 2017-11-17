@@ -63,6 +63,15 @@ body {
 
     article:nth-of-type(1) {
       margin-top: 100px;
+
+      footer {
+        margin-top: 140px;
+      }
+
+      figure {
+        top: 210px;
+        left: 35%;
+      }
     }
 
     article#triggerAboutAll {
