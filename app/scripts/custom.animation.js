@@ -23,6 +23,8 @@ $(function() {
   // Wait for document ready
   console.log('%c! ! ! Document ready ! ! !', 'color: white;background-color: black;');
   console.log('%c- - - W E L C O M E - - -', 'color: white;background-color: black;');
+  console.log('- Dev: You know who', 'http://allandolle.fr');
+  console.log('- UX/UI: Aymeric Sans', "https://www.linkedin.com/in/aymeric-sans-37a4527a/");
   // Animation Hello World typing
   autoType(".typing-hello", 115, 700);
   // Write Numbers inside first <aside> element
