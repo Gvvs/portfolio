@@ -23,6 +23,7 @@ function writeAsideNumbers(e) {
   }
 }
 
+
 // Window OnResize EventListeners
 $(window).resize(function() {
   writeAsideNumbers(heightCalcule());

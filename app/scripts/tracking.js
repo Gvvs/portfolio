@@ -13,15 +13,15 @@ class Track {
     });
   }
   send() {
-    return ga("send", "event", this.category, this.label, this.value);
+    return ga('send', 'event', this.category, this.label, this.value);
   }
   log() {
-    return console.log("Send tracking " + "category:" + this.category + ", label:" + this.label + ", value:" + this.value);
+    return console.log('Send tracking ' + 'category:' + this.category + ', label:' + this.label + ', value:' + this.value);
   }
   onClick(selector) {
-    this.category = $(selector).data("track");
-    this.label = $(selector).data("label");
-    this.value = $(selector).data("value");
+    this.category = $(selector).data('track');
+    this.label = $(selector).data('label');
+    this.value = $(selector).data('value');
     this.send();
     this.log();
   }
